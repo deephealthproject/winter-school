@@ -6,10 +6,8 @@ computer vision in tasks related to medical imaging and other
 medical data, and (2) to high-performance computing to considerably
 reduce the running times of model-training processes.
 
----
 From [here](figures/DHWS-flyer.pdf) you can download the flyer to distributed it everywhere (thanks in advance).
 
----
 
 | Info | Detail |
 | ---: | :--- |
@@ -20,7 +18,6 @@ From [here](figures/DHWS-flyer.pdf) you can download the flyer to distributed it
 | Registration | Via EventBrite in [this link](https://www.eventbrite.es/e/deephealth-winter-school-tickets-215923251257) |
 | Contents | Deep Learning, Computer Vision, Medical Imaging and High-Performance Computing |
 
----
 
 The DeepHealth Winter School will include theoretical sessions (master classes)
 about the above enumerated four subjects, and lab sessions to show attendants
@@ -28,12 +25,13 @@ how the software created in the DeepHealth project can be installed and used.
 
 Lab exercises will be guided by junior and senior researchers involved in the DeepHealth project.
 
----
 
 ## Involved partners
 
 <img src=figures/partners.png width="70%" align="center">Partners</img>
 
+
+---
 
 ## Contents in detail
 
