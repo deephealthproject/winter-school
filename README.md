@@ -28,7 +28,7 @@ Lab exercises will be guided by junior and senior researchers involved in the De
 
 ## Involved partners
 
-<img src=figures/partners.png width="70%" align="center">Partners</img>
+<img src=figures/partners.png width="70%" align="center" />
 
 
 ---
