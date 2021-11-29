@@ -11,7 +11,6 @@ From [here](figures/DHWS-flyer.pdf) you can download the flyer to distributed it
 
 ---
 
-
 | ---: | :--- |
 | Organised by | The DeepHealth project, an H2020 funded project with agreement number 825111 |
 | ---: | :--- |
