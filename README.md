@@ -8,7 +8,7 @@ Winter school exercies
 ```
 # Download source code
 git clone https://github.com/deephealthproject/eddl.git
-cd eddl/
+cd eddl
 
 # Install dependencies
 conda env create -f environment.yml
