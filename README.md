@@ -14,21 +14,15 @@ From [here](figures/DHWS-flyer.pdf) you can download the flyer to distributed it
 | Info | Detail |
 | ---: | :--- |
 | Organised by | The DeepHealth project, an H2020 funded project with agreement number 825111 |
-| --- | --- |
 | Dates | January 24-28, 2022 [here you can find the schedule](figures/schedule.pdf) |
-| --- | --- |
 | Location | Only via Zoom |
-| --- | --- |
 | Target audience | Master’s degree students in AI/ML/DS and professionals from Industry with previous knowledge on Machine Learning. Linux user experience recommended. |
-| | - PhD students |
-| | - Data scientists & computer scientists with a Master’s Degree in Computer Science / Data Science / Artificial Intelligence / (other affine area like Mathematics or Physics), or in the process of completing it |
-| | - Professionals from industry interested in the topics to be covered in the Winter School |
-| | Experience with Linux and *shell-script* is recommended to all audiences types. |
-| --- | --- |
+ - PhD students 
+ - Data scientists & computer scientists with a Master’s Degree in Computer Science / Data Science / Artificial Intelligence / (other affine area like Mathematics or Physics), or in the process of completing it 
+ - Professionals from industry interested in the topics to be covered in the Winter School |
+| Experience with Linux and *shell-script* is recommended to all audiences types. |
 | Registration | Via EventBrite in [this link](https://www.eventbrite.es/e/deephealth-winter-school-tickets-215923251257) |
-| --- | --- |
 | Contents | Deep Learning, Computer Vision, Medical Imaging and High-Performance Computing |
-| --- | -- |
 
 ---
 
