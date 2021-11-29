@@ -65,7 +65,7 @@ Lab exercises will be guided by junior and senior researchers involved in the De
 
 1. ECVL & EDDL environment for potential developer
 
-2. Installation & configuration
+2. Installation and configuration of ECVL & EDDL
 
 3. Lab exercises on non-distributed mode using DeepHealth use cases
 
