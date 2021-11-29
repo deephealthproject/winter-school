@@ -77,46 +77,31 @@ Lab exercises will be guided by junior and senior researchers involved in the De
 
 ## Involved People
 
-- Monica Caballero (NTTData Spain), DeepHealth Project Coordinator
-
-- Jon Ander G&oacute;mez (UPV), DeepHealth Technical Manager (UPV)
+|     |     |     |
+| --- | --- | --- |
+| <img src=people/empty-profile.png width=100> | | &nbsp;&nbsp; Monica Caballero (NTTData Spain) DeepHealth Project Coordinator |
+| <img src=people/photo-jon.png width=100> | | &nbsp;&nbsp; Jon Ander G&oacute;mez (UPV), DeepHealth Technical Manager |
 
 #### Alphabetical order from here
 
-- Marco Aldinucci (UNITO)
-
-- Federico Bolelli (UNIMORE)
-
-- Giovanni Busonera (CRS4)
-
-- Barbara Canalupo (UNITO)
-
-- Salvador Carri&oacute;n (UPV)
-
-- Iacopo Colonnelli (UNITO)
-
-- Jos&eacute; Flich (UPV)
-
-- Constantino Grana (UNIMORE)
-
-- Marco Grosso (CDSS)
-
-- &Aacute;lvaro L&oacute;pez (UPV)
-
-- Javier Mart&iacute;nez (UPV)
-
-- Miquel Moreto (BSC)
-
-- Roberto Paredes (UPV)
-
-- Daniele Perlo (CDSS)
-
-- Luca Pireddu (CRS4)
-
-- Eduardo Qui&ntilde;ones (BSC)
-
-- Riccardo Renzulli (UNITO)
-
-- Enzo Tartaglioni (UNITO)
-
-- Francesco Versaci (CRS4)
+|     |     |     |
+| --- | --- | --- |
+| <img src=people/empty-profile.png width=100> | | &nbsp;&nbsp; Marco Aldinucci (UNITO) |
+| <img src=people/empty-profile.png width=100> | | &nbsp;&nbsp; Federico Bolelli (UNIMORE) |
+| <img src=people/empty-profile.png width=100> | | &nbsp;&nbsp; Giovanni Busonera (CRS4) |
+| <img src=people/empty-profile.png width=100> | | &nbsp;&nbsp; Barbara Canalupo (UNITO) |
+| <img src=people/empty-profile.png width=100> | | &nbsp;&nbsp; Salvador Carri&oacute;n (UPV) |
+| <img src=people/empty-profile.png width=100> | | &nbsp;&nbsp; Iacopo Colonnelli (UNITO) |
+| <img src=people/empty-profile.png width=100> | | &nbsp;&nbsp; Jos&eacute; Flich (UPV) |
+| <img src=people/empty-profile.png width=100> | | &nbsp;&nbsp; Constantino Grana (UNIMORE) |
+| <img src=people/empty-profile.png width=100> | | &nbsp;&nbsp; Marco Grosso (CDSS) |
+| <img src=people/empty-profile.png width=100> | | &nbsp;&nbsp; &Aacute;lvaro L&oacute;pez (UPV) |
+| <img src=people/empty-profile.png width=100> | | &nbsp;&nbsp; Javier Mart&iacute;nez (UPV) |
+| <img src=people/empty-profile.png width=100> | | &nbsp;&nbsp; Miquel Moreto (BSC) |
+| <img src=people/empty-profile.png width=100> | | &nbsp;&nbsp; Roberto Paredes (UPV) |
+| <img src=people/empty-profile.png width=100> | | &nbsp;&nbsp; Daniele Perlo (CDSS) |
+| <img src=people/empty-profile.png width=100> | | &nbsp;&nbsp; Luca Pireddu (CRS4) |
+| <img src=people/empty-profile.png width=100> | | &nbsp;&nbsp; Eduardo Qui&ntilde;ones (BSC) |
+| <img src=people/empty-profile.png width=100> | | &nbsp;&nbsp; Riccardo Renzulli (UNITO) |
+| <img src=people/empty-profile.png width=100> | | &nbsp;&nbsp; Enzo Tartaglioni (UNITO) |
+| <img src=people/empty-profile.png width=100> | | &nbsp;&nbsp; Francesco Versaci (CRS4) |
