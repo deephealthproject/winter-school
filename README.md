@@ -30,6 +30,8 @@ Lab exercises will be guided by junior and senior researchers involved in the De
 
 <img src=figures/partners.png width="80%" align="center" >
 
+---
+
 ## Contents in more detail
 
 ### Master classes
