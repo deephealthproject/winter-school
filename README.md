@@ -28,12 +28,9 @@ Lab exercises will be guided by junior and senior researchers involved in the De
 
 ## Involved partners
 
-<img src=figures/partners.png width="70%" align="center">
+<img src=figures/partners.png width="80%" align="center" >
 
----
-
-
-## Contents in detail
+## Contents in more detail
 
 ### Master classes
 
