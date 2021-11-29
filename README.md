@@ -72,9 +72,8 @@ Lab exercises will be guided by junior and senior researchers involved in the De
 4. Lab exercises on distributed mode using DeepHealth use cases and running on a HPC environment
 
 
-|[schedule](figures/schedule.pdf)
+[Here you can see and download the schedule](figures/schedule.pdf)
 
-<img src=figures/schedule.pdf width="90%" align="center">
 
 ## Involved People
 
