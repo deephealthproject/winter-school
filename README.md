@@ -13,14 +13,14 @@ From [here](figures/DHWS-flyer.pdf) you can download the flyer to distributed it
 | ---: | :--- |
 | Organised by | [The DeepHealth project](https://deephealth-project.eu), an H2020 funded project with agreement number 825111 |
 | Dates | January 24-28, 2022 [here you can find the schedule](figures/schedule.pdf) |
-| Location | Only via Zoom |
+| Location | Only via Zoom (link will be provided to accepted participants) |
 | Target audience | PhD and Master’s degree students in AI/ML/DS and professionals from Industry with previous knowledge on Machine Learning. Experience with Linux and *shell-script* is recommended to all audiences types. |
 | Registration | Via EventBrite in [this link](https://www.eventbrite.es/e/deephealth-winter-school-tickets-215923251257) |
-| Contents | Deep Learning, Computer Vision, Medical Imaging and High-Performance Computing |
+| Topics | Deep Learning, Computer Vision, Medical Imaging and High-Performance Computing |
 
 
 The DeepHealth Winter School will include theoretical sessions (master classes)
-about the above enumerated four subjects, and lab sessions to show attendants
+about the above enumerated four topics, and lab sessions to show attendants
 how the software created in the DeepHealth project can be installed and used.
 
 Lab exercises will be guided by junior and senior researchers involved in the DeepHealth project.
@@ -28,10 +28,10 @@ Lab exercises will be guided by junior and senior researchers involved in the De
 
 ## Involved partners
 
-<img src=figures/partners.png width="70%" align="center" />
-
+<img src=figures/partners.png width="70%" align="center">
 
 ---
+
 
 ## Contents in detail
 
@@ -75,9 +75,9 @@ Lab exercises will be guided by junior and senior researchers involved in the De
 
 |[schedule](figures/schedule.pdf)
 
-<img src=figures/schedule.pdf width="90%" align="center">Schedule</img>
+<img src=figures/schedule.pdf width="90%" align="center">
 
-## People
+## Involved People
 
 - Monica Caballero (NTTData Spain), DeepHealth Project Coordinator
 
