@@ -48,7 +48,7 @@ Lab exercises will be guided by junior and senior researchers involved in the De
 
 4. Medical Image manipulation (WSI / DICOM / NifTI): reports and multilabelling, by Francesco Versaci (CRS4), Giovanni Busonera (CRS4) and Costantino Grana (UNIMORE)
 
-5. High-Performance Computing, by Eduardo Qui&ntilde;ones (BSC) and 
+5. High-Performance Computing, by Eduardo Qui&ntilde;ones (BSC) and Iacopo Colonnelli (UNITO)
 
 6. GPU programming in the EDDL, by Roberto Paredes (UPV)
 
