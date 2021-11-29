@@ -11,7 +11,7 @@ From [here](figures/DHWS-flyer.pdf) you can download the flyer to distributed it
 
 | Info | Detail |
 | ---: | :--- |
-| Organised by | The DeepHealth project, an H2020 funded project with agreement number 825111 |
+| Organised by | [The DeepHealth project](https://deephealth-project.eu), an H2020 funded project with agreement number 825111 |
 | Dates | January 24-28, 2022 [here you can find the schedule](figures/schedule.pdf) |
 | Location | Only via Zoom |
 | Target audience | PhD and Master’s degree students in AI/ML/DS and professionals from Industry with previous knowledge on Machine Learning. Experience with Linux and *shell-script* is recommended to all audiences types. |
