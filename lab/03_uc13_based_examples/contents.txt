@@ -1,0 +1,33 @@
+Tentative agenda for several sessions
+
+Thursday afternoon:
+
+- UC13
+  - Intro to UC13 (15')
+    - introduction to the task
+    - dataset description
+  - Approach to the problem using RNNs (25')
+    - Sequences: DataGenerator
+    - Topologies
+      - GRU based
+      - LSTM based
+    - Metrics
+      - at the sample level
+      - at the sliding window level
+      - at the post-inference level
+    - Results
+ 
+  - Test scripts with the best model in ONNX to reproduce results
+
+
+Wednesday morning:
+
+  - Explanation on the code (+10')
+    - script flags
+    - how to modify models
+
+  - Attendees run their own experiments by modifying the provided code
+
+  - Attendees should report their results on a public GitHub repository
+    that will be summarized during the closing session
+

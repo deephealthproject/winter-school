@@ -1,0 +1,16 @@
+Tentative schedule for 1 hour:
+
+1. Conda environment preparation
+    - Conda installation
+    - Creation of a environment
+    - Installation of dependencies, including CUDA & CuDNN libraries
+
+2. PyECVL+PyEDDL installation on Linux
+
+3. Clone PyEDDL repository to test the installation by running some examples
+
+4. Show attendees links where example datasets are available
+
+
+
+We will remain connected to support attendees for completing the installation, with a limit at 19h

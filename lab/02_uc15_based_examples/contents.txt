@@ -1,0 +1,29 @@
+Tentative agenda for several sessions
+
+Thursday afternoon:
+
+- UC15
+  - Intro to UC15 (20')
+    - data selection
+    - data preprocessing
+    - lungs extraction with U-Net (done with Keras, to be replicated using the EDDL)
+    - data partitioning (80-10-10)
+
+  - Some results (>= 2 topologies) (10')
+    - binary classifier: covid19 vs normal
+    - multiclass & multilabel classifier: covid19, infiltrates, pneumonia, normal
+
+  - Test scripts with the best model in ONNX to reproduce results
+
+Wednesday morning:
+
+  - Explanation on the code (20')
+    - scripts flags
+    - how to add models
+    - how to add data-augmentation transformations
+
+  - Attendees run their own experiments by modifying the provided code
+
+  - Attendees should report their results on a public GitHub repository
+    that will be summarized during the closing session
+
