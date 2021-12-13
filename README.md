@@ -48,9 +48,9 @@ Lab exercises will be guided by junior and senior researchers involved in the De
 
 4. Medical Image manipulation
 
-    4.1 DICOM & NifTI formats by Costantino Grana (UNIMORE)
+    1. DICOM & NifTI formats by Costantino Grana (UNIMORE)
 
-    4.2 Whole Slide Images (WSI) and reports and multilabelling, by Francesco Versaci (CRS4) and Giovanni Busonera (CRS4)
+    2. Whole Slide Images (WSI) and reports and multilabelling, by Francesco Versaci (CRS4) and Giovanni Busonera (CRS4)
 
 5. High-Performance Computing, by Eduardo Qui&ntilde;ones (BSC) and Iacopo Colonnelli (UNITO)
 
@@ -60,9 +60,9 @@ Lab exercises will be guided by junior and senior researchers involved in the De
 
     2. Reconfigurable Architectures Support in EDDL, by
 
-    - Jos&eacute; Flich (UPV) for FPGA,
-    - Enzo Tartaglione (UNITO) for pruning, and 
-    - Vicent Templier (CEA) for quantization methodologies
+        - Jos&eacute; Flich (UPV) for FPGA,
+        - Enzo Tartaglione (UNITO) for pruning, and 
+        - Vicent Templier (CEA) for quantization methodologies
 
 7. Presentation of the other three ICT-11 projects, Friday morning
 
