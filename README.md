@@ -56,13 +56,13 @@ Lab exercises will be guided by junior and senior researchers involved in the De
 
 6. Heterogeneus Architectures in EDDL
 
-    6.1. GPU programming in the EDDL, by Roberto Paredes (UPV)
+    1. GPU programming in the EDDL, by Roberto Paredes (UPV)
 
-    6.2. Reconfigurable Architectures Support in EDDL, by
+    2. Reconfigurable Architectures Support in EDDL, by
 
-        - Jos&eacute; Flich (UPV) for FPGA,
-        - Enzo Tartaglione (UNITO) for pruning, and 
-        - Vicent Templier (CEA) for quantization methodologies
+    - Jos&eacute; Flich (UPV) for FPGA,
+    - Enzo Tartaglione (UNITO) for pruning, and 
+    - Vicent Templier (CEA) for quantization methodologies
 
 7. Presentation of the other three ICT-11 projects, Friday morning
 
