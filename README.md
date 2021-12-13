@@ -46,7 +46,11 @@ Lab exercises will be guided by junior and senior researchers involved in the De
 
 3. Medical Imaging, by Marco Grosso (CDSS), Daniele Perlo (CDSS) and Riccardo Renzulli (UNITO)
 
-4. Medical Image manipulation (WSI / DICOM / NifTI): reports and multilabelling, by Francesco Versaci (CRS4), Giovanni Busonera (CRS4) and Costantino Grana (UNIMORE)
+4. Medical Image manipulation
+
+    4.1 DICOM & NifTI formats by Costantino Grana (UNIMORE)
+
+    4.2 Whole Slide Images (WSI) and reports and multilabelling, by Francesco Versaci (CRS4) and Giovanni Busonera (CRS4)
 
 5. High-Performance Computing, by Eduardo Qui&ntilde;ones (BSC) and Iacopo Colonnelli (UNITO)
 
@@ -55,6 +59,7 @@ Lab exercises will be guided by junior and senior researchers involved in the De
     6.1. GPU programming in the EDDL, by Roberto Paredes (UPV)
 
     6.2. Reconfigurable Architectures Support in EDDL, by
+
         - Jos&eacute; Flich (UPV) for FPGA,
         - Enzo Tartaglione (UNITO) for pruning, and 
         - Vicent Templier (CEA) for quantization methodologies
