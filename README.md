@@ -103,7 +103,7 @@ Lab exercises will be guided by junior and senior researchers involved in the De
 | <img src=people/empty-profile.png width=100> | | &nbsp;&nbsp; Salvador Carri&oacute;n (UPV) |
 | <img src=people/colonnelli-100x100.jpg width=100> | | &nbsp;&nbsp; Iacopo Colonnelli (UNITO) |
 | <img src=people/photo_flich2.png width=100> | | &nbsp;&nbsp; Jos&eacute; Flich (UPV) |
-| <img src=people/empty-profile.png width=100> | | &nbsp;&nbsp; Constantino Grana (UNIMORE) |
+| <img src="https://bnbw.eu/assets/images/grana_v2.png" width=100> | | &nbsp;&nbsp; Costantino Grana (UNIMORE) |
 | <img src=people/empty-profile.png width=100> | | &nbsp;&nbsp; Marco Grosso (CDSS) |
 | <img src=people/empty-profile.png width=100> | | &nbsp;&nbsp; &Aacute;lvaro L&oacute;pez (UPV) |
 | <img src=people/empty-profile.png width=100> | | &nbsp;&nbsp; Javier Mart&iacute;nez (UPV) |
