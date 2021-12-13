@@ -50,11 +50,16 @@ Lab exercises will be guided by junior and senior researchers involved in the De
 
 5. High-Performance Computing, by Eduardo Qui&ntilde;ones (BSC) and Iacopo Colonnelli (UNITO)
 
-6. GPU programming in the EDDL, by Roberto Paredes (UPV)
+6. Heterogeneus Architectures in EDDL
 
-7. FPGA programming in the EDDL, by Jos&eacute; Flich (UPV)
+    6.1. GPU programming in the EDDL, by Roberto Paredes (UPV)
 
-8. Presentation of the other three ICT-11 projects, Friday morning
+    6.2. Reconfigurable Architectures Support in EDDL, by
+        - Jos&eacute; Flich (UPV) for FPGA,
+        - Enzo Tartaglione (UNITO) for pruning, and 
+        - Vicent Templier (CEA) for quantization methodologies
+
+7. Presentation of the other three ICT-11 projects, Friday morning
 
     - ICT-11 (a) , by (Project Coordinator)
     - ICT-11 (b) , by (Project Coordinator)
@@ -92,7 +97,7 @@ Lab exercises will be guided by junior and senior researchers involved in the De
 | <img src=people/empty-profile.png width=100> | | &nbsp;&nbsp; Barbara Cantalupo (UNITO) |
 | <img src=people/empty-profile.png width=100> | | &nbsp;&nbsp; Salvador Carri&oacute;n (UPV) |
 | <img src=people/empty-profile.png width=100> | | &nbsp;&nbsp; Iacopo Colonnelli (UNITO) |
-| <img src=people/empty-profile.png width=100> | | &nbsp;&nbsp; Jos&eacute; Flich (UPV) |
+| <img src=people/photo_flich2.png width=100> | | &nbsp;&nbsp; Jos&eacute; Flich (UPV) |
 | <img src=people/empty-profile.png width=100> | | &nbsp;&nbsp; Constantino Grana (UNIMORE) |
 | <img src=people/empty-profile.png width=100> | | &nbsp;&nbsp; Marco Grosso (CDSS) |
 | <img src=people/empty-profile.png width=100> | | &nbsp;&nbsp; &Aacute;lvaro L&oacute;pez (UPV) |
