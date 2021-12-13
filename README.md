@@ -44,7 +44,16 @@ Lab exercises will be guided by junior and senior researchers involved in the De
     
     - Two sessions: Monday and Tuesday, see schedule.
 
-3. Medical Imaging, by Marco Grosso (CDSS), Daniele Perlo (CDSS) and Riccardo Renzulli (UNITO)
+3. Medical Imaging
+
+    1. Introduction to medical imaging: a constant learning experience by Marco Grangetto (UNITO)
+
+    2. From H&E to pixels: digital pathology applications for colon cancer diagnosis by Luca Bertero (UNITO)
+
+    3. Neural Network-derived perfusion maps in patients with acute ischemic stroke by Federico D’Agata (UNITO) and Enzo Tartaglione (UNITO)
+
+    4. Lung cancer diagnosis by Daniele Perlo (CDSS), Riccardo Renzulli (CDSS) and Marco Grosso (CDSS)
+
 
 4. Medical Image manipulation
 
