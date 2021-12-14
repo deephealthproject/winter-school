@@ -47,6 +47,7 @@ In order to run the script we will need a pretrained model, you can take one of 
 
 ## 3. Run inference
 Once we have the data and the model we can run inference with this command:
+
     python test.py \
         --yaml-path <PATH_TO_THE_ECVL_YAML_FILE> \
         --onnx-path <PATH_TO_YOUR_ONNX_FILE> \
