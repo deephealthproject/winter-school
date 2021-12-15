@@ -59,7 +59,7 @@ Lab exercises will be guided by junior and senior researchers involved in the De
 
     1. DICOM & NifTI formats by Costantino Grana (UNIMORE)
 
-    2. Whole Slide Images (WSI) and reports and multilabelling, by Francesco Versaci (CRS4) and Giovanni Busonera (CRS4)
+    2. Deep Learning pipeline on histopathology images: detection of prostatic tumor, by Francesco Versaci (CRS4) and Giovanni Busonera (CRS4)
 
 5. High-Performance Computing, by Eduardo Qui&ntilde;ones (BSC) and Iacopo Colonnelli (UNITO)
 
