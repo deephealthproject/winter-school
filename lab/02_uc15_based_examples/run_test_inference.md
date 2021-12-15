@@ -42,17 +42,28 @@ That command will show the following output:
 
 ## 2. Get a pretrained model in ONNX format
 In order to run the script we will need a pretrained model, you can take one of this:
-- For the 256x256 dataset: [download model](link/still/pending)
-- For the 512x512 dataset: [download model](link/still/pending)
+- For the 256x256 dataset: [download uc15_256x256_ResNet101.onnx](https://upvedues-my.sharepoint.com/:u:/g/personal/salcarpo_upv_edu_es/EfX00LcDeINIuMvPnt1_aUABQlFO3zPletzohRtq5O9E3g?e=AbODWc)
+- For the 512x512 dataset: [download uc15_512x512_ResNet101.onnx](https://upvedues-my.sharepoint.com/:u:/g/personal/salcarpo_upv_edu_es/EaLfcNGvMlFElO9Ml0-GI2UBxLxG5nOLVRBPgZe7F8S9rA?e=2i1oD0)
 
 ## 3. Run inference
 Once we have the data and the model we can run inference with this command:
+- For the 256x256 dataset and ONNX model:
 
-    python test.py \
-        --yaml-path <PATH_TO_THE_ECVL_YAML_FILE> \
-        --onnx-path <PATH_TO_YOUR_ONNX_FILE> \
-        --target-size 256 256 \
-        --rgb
+        # Inside uc15_lab/UC15_pipeline/pyeddl_pipeline
+        python test.py \
+            --yaml-path ../../data/256x256/ecvl_256x256_normal-vs-covid_only-r0.yaml \
+            --onnx-files ~/Downloads/uc15_256x256_ResNet101.onnx \
+            --target-size 256 256 \
+            --rgb
+        
+- For the 512x512 dataset and ONNX model:
+
+        # Inside uc15_lab/UC15_pipeline/pyeddl_pipeline
+        python test.py \
+            --yaml-path ../../data/512x512/ecvl_512x512_normal-vs-covid_only-r0.yaml \
+            --onnx-files ~/Downloads/uc15_512x512_ResNet101.onnx \
+            --target-size 512 512 \
+            --rgb
 
 ***Remember*** to combine well the yaml file path, the onnx model and the target size depending on the version of the dataset used (256x256 or 512x512).
 
