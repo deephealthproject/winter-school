@@ -37,7 +37,7 @@ Download the PyEDDL github repository:
 Go to the examples folder and execute one of them:
 
     cd pyeddl/examples/NN/1_MNIST
-    python mnist_conv.py
+    python mnist_conv.py --gpu
     
 ## Sources
 You can see more details about the installation and other installation methods like docker [here](https://deephealthproject.github.io/pyecvl/installation.html) 
