@@ -42,8 +42,8 @@ That command will show the following output:
 
 ## 2. Get a pretrained model in ONNX format
 In order to run the script we will need a pretrained model, you can take one of this:
-- For the 256x256 dataset: [download uc15_256x256_ResNet101.onnx](https://upvedues-my.sharepoint.com/:u:/g/personal/salcarpo_upv_edu_es/EfX00LcDeINIuMvPnt1_aUABQlFO3zPletzohRtq5O9E3g?e=AbODWc)
-- For the 512x512 dataset: [download uc15_512x512_ResNet101.onnx](https://upvedues-my.sharepoint.com/:u:/g/personal/salcarpo_upv_edu_es/EaLfcNGvMlFElO9Ml0-GI2UBxLxG5nOLVRBPgZe7F8S9rA?e=2i1oD0)
+- For the 256x256 dataset, with an accuracy on test of 85.71% (normal vs COVID 19): [download uc15_256x256_ResNet101.onnx](https://upvedues-my.sharepoint.com/:u:/g/personal/salcarpo_upv_edu_es/EfX00LcDeINIuMvPnt1_aUABQlFO3zPletzohRtq5O9E3g?e=AbODWc)
+- For the 512x512 dataset, with an accuracy on test of 88.57% (normal vs COVID 19): [download uc15_512x512_ResNet101.onnx](https://upvedues-my.sharepoint.com/:u:/g/personal/salcarpo_upv_edu_es/EaLfcNGvMlFElO9Ml0-GI2UBxLxG5nOLVRBPgZe7F8S9rA?e=2i1oD0)
 
 ## 3. Run inference
 Once we have the data and the model we can run inference with this command:
