@@ -91,6 +91,6 @@ As an example, you could run an experiment with the following command:
 
 ## 3. Training results
 At the end of the training process the script will run the test with the best models by validation loss and accuracy. Those results will be
-displayed and also saved in an experiment folder that will be created in folder called *experiments* (by default). In that folder you will find
-the results of the test and also the training results for every epoch, the experiment configuration with all the flags used, the plots of
+displayed and also saved in an experiment folder that will be created in a folder called *experiments* (by default). In that folder you will find
+the results of the test and also: the training results for every epoch (CSV file), the experiment configuration (json file), the plots of
 the training metrics and the ONNX checkpoint files.
