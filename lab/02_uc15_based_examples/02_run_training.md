@@ -34,7 +34,7 @@ That command will show the following output:
       --augmentations {0.0,1.0,1.1,2.0}, -augs {0.0,1.0,1.1,2.0}
                             Version of data augmentation to use (default: 0.0)
       --rgb                 Load the images in RGB format instead of grayscale. If the image is grayscale the single channel is replicated two times (default: False)
-      --model {model_1,model_2,model_3,model_4,ResNet18,ResNet34,ResNet50,ResNet101,ResNet152,Pretrained_ResNet18,Pretrained_ResNet34,Pretrained_ResNet50,Pretrained_ResNet101,Pretrained_ResNet152,VGG16,VGG16BN,VGG19,VGG19BNPretrained_VGG16,Pretrained_VGG19,Pretrained_VGG16BN,Pretrained_VGG19BN}
+      --model {model_1,model_2,model_3,model_4,ResNet18,ResNet34,ResNet50,ResNet101,ResNet152,Pretrained_ResNet18,Pretrained_ResNet34,Pretrained_ResNet50,Pretrained_ResNet101,Pretrained_ResNet152,VGG16,VGG16BN,VGG19,VGG19BN,Pretrained_VGG16,Pretrained_VGG19,Pretrained_VGG16BN,Pretrained_VGG19BN}
                             Model architecture to train (default: model_1)
       --multiclass          Prepares the pipeline for multiclass classification, using sigmoid in the output layer (default: False)
       --binary-loss         Changes the model to have as many output layers as classes (with one output neuron) to be able to use binary cross entropy for every class (default: False)
