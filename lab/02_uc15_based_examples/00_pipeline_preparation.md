@@ -32,7 +32,7 @@ Download the GitHub repository of the UC15 pipeline:
     # Inside the uc15_lab directory
     git clone https://github.com/deephealthproject/UC15_pipeline.git
     
-### REMEMBER to activate the conda enviroment before the next step
+### REMEMBER to activate the conda environment before the next step
 If you haven't done the installation of the libraries (PyEDDL and PyECVL) you can
 see how to install them [here](https://github.com/deephealthproject/winter-school/blob/main/lab/01_installation/README.md).
     

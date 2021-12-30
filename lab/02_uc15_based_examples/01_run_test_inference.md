@@ -1,6 +1,6 @@
 # Run inference on test data with a pretrained model
 
-### REMEMBER to activate the conda enviroment before running the scripts
+### REMEMBER to activate the conda environment before running the scripts
 
     conda activate winter-school
 
