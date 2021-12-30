@@ -32,9 +32,9 @@ If you don't have a GPU available you can install the CPU version with:
 ## 4. Test installation
 Download any of the examples from the lab0 related to the ECVL and EDDL environment:
 
-* (MNIST example)[https://github.com/deephealthproject/winter-school/blob/main/lab/00_ecvl_eddl_environment/scripts/eddl_mnist.py]
-* (CIFAR-10 fine-grained training example)[https://github.com/deephealthproject/winter-school/blob/main/lab/00_ecvl_eddl_environment/scripts/eddl_cifar_fine-grained-training.py]
-* (IMDB recurrent net example)[https://github.com/deephealthproject/winter-school/blob/main/lab/00_ecvl_eddl_environment/scripts/eddl_imdb.py]
+* [MNIST example](https://github.com/deephealthproject/winter-school/blob/main/lab/00_ecvl_eddl_environment/scripts/eddl_mnist.py)
+* [CIFAR-10 fine-grained training example](https://github.com/deephealthproject/winter-school/blob/main/lab/00_ecvl_eddl_environment/scripts/eddl_cifar_fine-grained-training.py)
+* [IMDB recurrent net example](https://github.com/deephealthproject/winter-school/blob/main/lab/00_ecvl_eddl_environment/scripts/eddl_imdb.py)
     
 To execute them you can run the script with the default settings (e.g. the MNIST example):
 
