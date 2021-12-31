@@ -24,7 +24,11 @@ That command will show the following output:
       --yaml-path YAML_PATH
                             Path to the YAML file to create the ECVL dataset (default: ../../../datasets/BIMCV-COVID19-cIter_1_2/covid19_posi/ecvl_bimcv_covid19.yaml)
       --multiclass          Prepares the testing pipeline for multiclass classification (default: False)
-      --binary-loss         Prepares the pipeline for models with as many output layers as classes (with one output neuron) (default: False)
+      --binary-loss         Changes the pipeline to use binary cross entropy as loss function enabling multiclass classification. The loss and metrics are computed for each unit(class) of the
+                            output layer (default: False)
+      --normal-vs-classification, -normal-vs
+                            Prepares the pipeline for binary classification where one of the two classes provided in the dataset must be 'normal'. The model will use a single output neuron to
+                            perform the binary classification using BCE loss and binary accuracy metric (default: False)
       --onnx-files onnx_path [onnx_path ...]
                             A list of paths to the ONNX files to use for testing (default: [])
       --out-path OUT_PATH   Path of the folder to store the test results. If not provided, the tests are only shown in the standard output (default: )
