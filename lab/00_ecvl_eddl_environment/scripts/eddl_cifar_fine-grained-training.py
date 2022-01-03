@@ -205,7 +205,7 @@ if __name__ == '__main__':
 
     arg_parser.add_argument(
         '--from-ckpt',
-        help='Path to an ONNX file to use as staring point',
+        help='Path to an ONNX file to use as starting point',
         default='',
         type=str)
 

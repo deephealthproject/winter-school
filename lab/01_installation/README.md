@@ -65,7 +65,7 @@ That command will output this:
       --onnx-output-path ONNX_OUTPUT_PATH
                             Filepath to store the best model in ONNX (default: best_model.onnx)
       --from-ckpt FROM_CKPT
-                            Path to an ONNX file to use as staring point (default: )
+                            Path to an ONNX file to use as starting point (default: )
     
 ## Sources
 You can see more details about the installation and other installation methods like docker [here](https://deephealthproject.github.io/pyecvl/installation.html) 
