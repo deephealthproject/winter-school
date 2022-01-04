@@ -79,29 +79,28 @@ The test script for the recurrent approach is `test_conv.py` and has the next fl
 
 You can show the flags in the terminal by using the flag `--help`:
 ```
-python python/test_recurrent_detector.py --help
+python python/test_conv.py --help
 ```
 
 
 ## 3. Run a complete experiment
-Now, we are going to run a complete experiment. We will train a recurrent neural network (LSTM) model for patient `ćhb01` using a window length of 1 second to generate samples, a shift of 0.5 seconds between the windows, and we will use a sequence of 19 timesteps to feed the network. This sequence will represent 10 seconds of the original signal, as we are overlapping the sliding window a 50%. We will run 5 epochs and the optimizer and initial learning rate will be Adam and 0.0001 respectively.
+Now, we are going to run a complete experiment. We will train a Convolutional Neural Network model for patient `ćhb01` using a window length of 10 seconds to generate samples, and a shift of 0.25 seconds between the windows. We will run 5 epochs and the optimizer and initial learning rate will be Adam and 0.00001 respectively.
 
 ### Training
 To run that training experiment, we will run the following command:
 ```
 # Inside uc13_lab/UC13_pipeline/
-python python/train_recurrent_detector.py \
+python python/train_conv.py \
     --index indexes_detection/chb01/train.txt \
     --index-val indexes_detection/chb01/validation.txt \
     --id chb01 \
-    --model lstm \
-    --batch-size 64 \
+    --model conv1 \
+    --batch-size 20 \
     --gpus 1 \
-    --lr 0.0001 \
+    --lr 0.00001 \
     --opt adam \
     --window-length 1 \
-    --shift 0.5 \
-    --timesteps 19
+    --shift 0.5
 ```
 
 When running a training script, it will output the results while training.
@@ -114,11 +113,12 @@ We will test the model with the following post processing parameters: a sliding 
 
 To run the test of the experiment, we can run the following command:
 ```
-python python/test_recurrent_detector.py \
+python python/test_conv.py \
     --index indexes_detection/chb01/test.txt \
     --id chb01 \
-    --model lstm \
-    --batch-size 64 \
+    --model conv1 \
+    --dir PATH_TO_THE_EXPERIMENT_DIR_HERE \
+    --batch-size 1 \
     --gpus 1 \
     --window-length 1 \
     --shift 0.5 \
@@ -131,7 +131,7 @@ python python/test_recurrent_detector.py \
 
 When running this script, it will perform the inference of the test samples through the trained neural network, and it will do a post processing analysis to act as a detector.
 
-After this, we will have launched a complete experiment on the Use Case 13 with the recurrent approach.
+After this, we will have launched a complete experiment on the Use Case 13 with the convolutional approach.
 
 ## Proposed Exercises
 We propose the attendees to run a similar experiment modifying some of the parameters. You can feel free to modify any of the parameters, taking into account that some of them are related to each other.

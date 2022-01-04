@@ -122,6 +122,7 @@ python python/test_recurrent_detector.py \
     --index indexes_detection/chb01/test.txt \
     --id chb01 \
     --model lstm \
+    --dir PATH_TO_THE_EXPERIMENT_DIR_HERE \
     --batch-size 64 \
     --gpus 1 \
     --window-length 1 \
