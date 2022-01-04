@@ -14,7 +14,7 @@ EEG recordings are continuous signals composed by many different channels, each 
 The dataset which is going to be used for this lab session has 247 recordings, associated to 8 pediatric subjects. This is a subset of the [CHB-MIT Scalp EEG Database](https://physionet.org/content/chbmit/1.0.0/) from [PhysioNet](https://physionet.org/), which contains 24 subjects.
 
 
-## How to run experiments
+## Exercises for the laboratory session
 Following the next guides, you should be able to run experiments with the Use Case 13.
 - [Pipeline preparation](00_pipeline_preparation.md): First step is to download the dataset and the code. Before this step you should have installed the PyECVL and PyEDDL libraries (you can see how to do it [here](https://github.com/deephealthproject/winter-school/blob/main/lab/01_installation/pyecvl_pyeddl_conda_install.md)).
 - [Run test recurrent example](01_run_test_inference.md).
