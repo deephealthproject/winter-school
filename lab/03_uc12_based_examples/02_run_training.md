@@ -49,7 +49,7 @@ To run training we can do it running a command like this:
 
         # Inside uc12_pipeline folder
         python skin_lesion_segmentation.py \
-            --yaml-path data/isic_segmentation/isic_segmentation.yml \
+            data/isic_segmentation/isic_segmentation.yml \
             --epochs 30 \
             --gpu 1 \
             --datagen-workers 4 \

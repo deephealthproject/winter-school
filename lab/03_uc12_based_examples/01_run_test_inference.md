@@ -52,10 +52,11 @@ Once we have the data and the model we can run inference with this command:
 
         # Inside uc12_pipeline folder
         python skin_lesion_segmentation.py \
-            --yaml-path data/isic_segmentation/isic_segmentation.yml \
+            data/isic_segmentation/isic_segmentation.yml \
             --ckpts ~/Downloads/UC12Segm_unet_224_bce.onnx \
             --no-train-val \
             --test \
-            --out-dir out_predictions
+            --out-dir out_predictions \
+            --gpu 1
 
 The masks predicted during inference will be stored in the *out_predictions* folder path that we provided with the *--out-dir* flag.
