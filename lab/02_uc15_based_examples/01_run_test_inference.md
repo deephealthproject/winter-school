@@ -43,6 +43,10 @@ That command will show the following output:
       --mem-level {full_mem,mid_mem,low_mem}, -mem {full_mem,mid_mem,low_mem}
                             Memory level for the computing device (default: full_mem)
       --seed SEED           Seed value for random operations (default: 1234)
+      --datagen-workers DATAGEN_WORKERS
+                            Number of worker threads to use for loading the batches (default: 1)
+      --queue-ratio-size QUEUE_RATIO_SIZE
+                            The producers-consumer queue of the data generator will have a maximum size equal to batch_size x queue_ratio_size x datagen_workers (default: 1)
 
 ## 2. Get a pretrained model in ONNX format
 In order to run the script we will need a pretrained model, you can take one of this:
