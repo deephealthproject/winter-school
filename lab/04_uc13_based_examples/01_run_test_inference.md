@@ -22,25 +22,31 @@ This script loads the best model saved in the experiments directory specified an
 
 optional arguments:
   -h, --help            show this help message and exit
+
+General Arguments:
   --index INDEX         Index filename to use for test.
   --id ID               Id of the patient.
   --model MODEL         Model identifier. "lstm" "gru"
   --dir DIR             Directory of the experiment to test. Example: experiments/detection_recurrent_chb01_LSTM/
   --batch-size BATCH_SIZE
-                        Batch size.
+                        Batch size. Default -> 64
   --gpus GPUS [GPUS ...]
                         Sets the number of GPUs to use. Usage "--gpus 1 1" (two GPUs)
+
+Data Loader Arguments:
   --window-length WINDOW_LENGTH
                         Window length  in seconds. Default -> 1
   --shift SHIFT         Window shift  in seconds. Default -> 0.5
   --timesteps TIMESTEPS
                         Timesteps to use as a  sequence. Default -> 19
+
+Post Inference Process Arguments:
   --inference-window INFERENCE_WINDOW
-                        Length of the sliding window to use after inferencing with the RNN. Default -> 20
+                        Length of the sliding window to use for the post-inference process. Default -> 20
   --alpha-pos ALPHA_POS
-                        Minimum rate of positive predicted samples in the sliding window for triggering a transition between normal state to ictal state. Default -> 0.4
+                        Minimum rate of positive predicted samples in the sliding window for triggering a transition between normal state to ictal state during the post-inference process. Default -> 0.4
   --alpha-neg ALPHA_NEG
-                        Maximum rate of positive predicted samples in the sliding window for triggering a transition between normal state to ictal state. Default -> 0.4
+                        Maximum rate of positive predicted samples in the sliding window for triggering a transition between normal state to ictal state during the post-inference process. Default -> 0.4
   --detection-threshold DETECTION_THRESHOLD
                         Number of seconds from the seizure onset to allow the detection. Default -> 20
 
