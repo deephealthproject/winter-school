@@ -48,4 +48,4 @@ At the end you should have this directory structure inside the *uc12_pipeline* d
     |   +-- models.py
     |   +-- utils.py
     |
-    +-- skin_lession_segmentation.py
+    +-- skin_lesion_segmentation.py

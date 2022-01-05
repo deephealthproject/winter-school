@@ -1,6 +1,6 @@
 # UC12 Lab
 
-Here you can find the contents for the UC12 lab related to a segmentation task using images of skin with lessions to segment the affected area.
+Here you can find the contents for the UC12 lab related to a segmentation task using images of skin with lesions to segment the affected area.
 
 In order to learn about the deep learning pipeline prepared for the lab you can check teh following guides:
 

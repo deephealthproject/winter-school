@@ -5,14 +5,14 @@
     conda activate winter-school
 
 ## 1. The test script
-For running inference on test data we are going to use the script **skin_lession_segmentation.py**, this script is prepared to do the inference with a pretrained model
+For running inference on test data we are going to use the script **skin_lesion_segmentation.py**, this script is prepared to do the inference with a pretrained model
 and also for training models. To do the inference we will need an ONNX file of the pretrained model and a dataset with a YAML file that defines the ECVL Dataset. This is
 the dataset that we downloaded in the [UC12 pipeline preparaion guide](00_pipeline_preparation.md).
 
 The script has some flags that are important in order to execute inference, to see them:
 
     # Show the available flags of the test script
-    python skin_lession_segmentation.py --help
+    python skin_lesion_segmentation.py --help
 
 That command will show the following output:
 
@@ -51,7 +51,7 @@ You can download a pretrained model based on the Unet architecture [download](ht
 Once we have the data and the model we can run inference with this command:
 
         # Inside uc12_pipeline folder
-        python skin_lession_segmentation.py \
+        python skin_lesion_segmentation.py \
             --yaml-path data/isic_segmentation/isic_segmentation.yml \
             --ckpts ~/Downloads/UC12Segm_unet_224_bce.onnx \
             --no-train-val \
