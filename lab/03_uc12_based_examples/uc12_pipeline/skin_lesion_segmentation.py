@@ -32,7 +32,7 @@ import pyecvl.ecvl as ecvl
 import pyeddl.eddl as eddl
 
 from lib import utils
-from lib.models import Unet, SegNet
+from lib.models import Unet, SegNet, SegNetBN
 
 
 def main(args):
@@ -83,6 +83,8 @@ def main(args):
         in_ = eddl.Input(size)
         if args.model == 'SegNet':
             out = SegNet(in_, num_classes)
+        elif args.model == 'SegNetBN':
+            out = SegNetBN(in_, num_classes)
         elif args.model == 'Unet':
             out = Unet(in_, num_classes)
         else:
@@ -274,8 +276,8 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('in_ds', metavar='INPUT_DATASET')
     parser.add_argument('--ckpts', type=str, help='Load an existing ONNX')
-    parser.add_argument('--model', type=str, default='SegNet',
-                        choices=['Unet', 'SegNet'],
+    parser.add_argument('--model', type=str, default='Unet',
+                        choices=['Unet', 'SegNet', 'SegNetBN'],
                         help='Model to use for training from scratch')
     parser.add_argument('--epochs', type=int, metavar='INT', default=30)
     parser.add_argument('--batch-size', type=int, metavar='INT', default=24)
