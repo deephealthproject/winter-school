@@ -2,6 +2,9 @@
 
 Here you can find the contents for the UC12 lab related to a segmentation task using images of skin with lesions to segment the affected area.
 
+The code version provided here comes from [this](https://github.com/deephealthproject/use-case-pipelines) github repository. Where you can also find the C++ version
+of the pipeline.
+
 In order to learn about the deep learning pipeline prepared for the lab you can check teh following guides:
 
 - [Pipeline preparation](00_pipeline_preparation.md): Download the dataset and prepare the pipeline for executing experiments. Before this step you should have installed the PyECVL and PyEDDL libraries (you can see how to do it [here](https://github.com/deephealthproject/winter-school/blob/main/lab/01_installation/README.md))
