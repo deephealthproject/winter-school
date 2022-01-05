@@ -24,7 +24,7 @@ That command will show the following output:
     optional arguments:
       -h, --help            show this help message and exit
       --ckpts CKPTS         Load an existing ONNX
-      --model {Unet,SegNet}
+      --model {Unet,SegNet,SegNetBN}
                             Model to use for training from scratch
       --epochs INT
       --batch-size INT
