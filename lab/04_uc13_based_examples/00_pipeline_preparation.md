@@ -23,9 +23,15 @@ git clone https://github.com/deephealthproject/UC13_pipeline --branch winter-sch
 It will generate a new directory called `UC13_pipeline` which will be the working directory for the experiments.
 
 ## 4. Activate environment
-Last step is to activate the Anaconda environment (if it is not activated yet). 
+Last step is to activate the Anaconda environment (if it is not activated yet) and to install some dependencies.
 ```
 conda activate winter-school
+
+# Go inside the pipeline directory if you are not inside yet
+cd uc13_lab/UC13_pipeline
+
+# Install dependencies (it could be already installed by the other pipelines)
+pip install -r requirements.txt
 ```
 If you have not installed the environment, please follow the guide [here](https://github.com/deephealthproject/winter-school/blob/main/lab/01_installation/README.md).
 
