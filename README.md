@@ -129,23 +129,16 @@ Lab exercises will be guided by junior and senior researchers involved in the De
     Details to be added soon.
 
 
-Lab team coordinators (in alphabetical order)
+### Lab team coordinators (in alphabetical order):
 
-- Barbara Cantalupo (UNITO)
+- Barbara Cantalupo (UNITO), Jon Ander G&oacute;mez (UPV), Costantino Grana (UNIMORE)
 
-- Jon Ander G&oacute;mez (UPV)
+### Lab team (in alphabetical order):
 
-- Costantino Grana (UNIMORE)
-
-Lab team (in alphabetical order)
-
-- Federico Bolelli (UNIMORE)
-
-- Salvador Carri&oacute;n (UPV)
-
-- &Aacute;lvaro L&oacute;pez (UPV)
-
-- Javier Mart&iacute;nez (UPV)
+- Federico Bolelli (UNIMORE),
+  Salvador Carri&oacute;n (UPV),
+  &Aacute;lvaro L&oacute;pez (UPV),
+  Javier Mart&iacute;nez (UPV),
 
 
 [Here you can see and download the schedule](figures/schedule.pdf)
