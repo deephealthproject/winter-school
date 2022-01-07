@@ -34,6 +34,8 @@ Lab exercises will be guided by junior and senior researchers involved in the De
 
 ## Contents in more detail
 
+[Here you can see and download the schedule](figures/schedule.pdf)
+
 ### Master classes
 
 1. Doing Deep Learning with the **European Distributed Deep Learing Library** (EDDL), by Roberto Paredes (UPV)
@@ -79,6 +81,7 @@ Lab exercises will be guided by junior and senior researchers involved in the De
     - ICT-11 (b) by (Project Coordinator)
     - ICT-11 (c) by (Project Coordinator)
 
+[Here you can see and download the schedule](figures/schedule.pdf)
 
 ### Lab sessions
 
@@ -121,6 +124,8 @@ Lab exercises will be guided by junior and senior researchers involved in the De
 
     3. [Use case 13 based on EEG raw signals to detect epileptic seizures](https://github.com/deephealthproject/winter-school/tree/main/lab/04_uc13_based_examples)
 
+    **IMPORTANT NOTICE**: due to the time required to download datasets, we suggest attenddes to start to download all the datasets
+    referenced in the three lab exercises the week before the winter school starts.
 
 4. Lab exercises to be run in distributed mode using datassets from several DeepHealth use cases and running on a HPC environment
 
@@ -138,7 +143,7 @@ Lab exercises will be guided by junior and senior researchers involved in the De
 - Federico Bolelli (UNIMORE),
   Salvador Carri&oacute;n (UPV),
   &Aacute;lvaro L&oacute;pez (UPV),
-  Javier Mart&iacute;nez (UPV),
+  Javier Mart&iacute;nez (UPV)
 
 
 [Here you can see and download the schedule](figures/schedule.pdf)
