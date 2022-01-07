@@ -115,21 +115,21 @@ Lab exercises will be guided by junior and senior researchers involved in the De
 
     Each use case will be explained in the following order using the correspoding slides and the guide:
         
-    1. [Use case 15 based on X-ray images from COVID-19 patients and ](https://github.com/deephealthproject/winter-school/tree/main/lab/02_uc15_based_examples)
+    1. [Use case 15 based on X-ray images from COVID-19 patients and controls](https://github.com/deephealthproject/winter-school/tree/main/lab/02_uc15_based_examples)
 
-    2. [Use case 12 based on RGB images from skin to detect and segment skin cancer](https://github.com/deephealthproject/winter-school/tree/main/lab/03_uc12_based_examples)
+    2. [Use case 12 based on RGB images from skin to classify and segment skin cancer spots](https://github.com/deephealthproject/winter-school/tree/main/lab/03_uc12_based_examples)
 
     3. [Use case 13 based on EEG raw signals to detect epileptic seizures](https://github.com/deephealthproject/winter-school/tree/main/lab/04_uc13_based_examples)
 
 
 4. Lab exercises to be run in distributed mode using datassets from several DeepHealth use cases and running on a HPC environment
 
-    Thursday morning from 9 AM till 1:30 PM
+    Thursday morning from 9 AM till 1:30 PM.
 
     Details to be added soon.
 
 
-Lab team coordinators (in alphabetical order):
+Lab team coordinators (in alphabetical order)
 
     - Barbara Cantalupo (UNITO)
 
@@ -137,7 +137,7 @@ Lab team coordinators (in alphabetical order):
 
     - Costantino Grana (UNIMORE)
 
-Lab team (in alphabetical order):
+Lab team (in alphabetical order)
 
     - Federico Bolelli (UNIMORE)
 
