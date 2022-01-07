@@ -8,10 +8,11 @@ cd uc13_lab
 
 ## 2. Download and extract the data
 You need to download the data from [here](https://upvedues-my.sharepoint.com/:u:/g/personal/salcarpo_upv_edu_es/EUByteF4uH1HorGCvqlat0QBSmT3wE2COc85i4mf80VzbA?e=yi4Yok).
-It is a zip file (7.6 GB) which contains the signals prepared for this lab session. You need to download and extract it in the directory that was created before.
+It is a zip file (7.6 GB) which contains the signals prepared for this lab session.
+You need to download and extract it in the directory that was created before.
 You can extract the file with the following command.
 ```
-# Inside the lab directory
+# Inside the uc13_lab directory
 unzip -q clean_signals.zip
 ```
 

@@ -1,5 +1,7 @@
 # UC13: Run experiments with the Convolutional Neural Network approach
-This is a guide on how to launch the experiments with the CNN approach. First, we explain the parameters of the scripts that will be used. After that, an example is provided for the attendees to replicate with their own modifications.
+This is a guide on how to launch the experiments with the CNN approach.
+First, we explain the parameters of the scripts that will be used.
+After that, an example is provided for the attendees to replicate with their own modifications.
 
 ## 0. Working directory
 To execute experiments in this Use Case, we need to work inside the pipeline repository.
@@ -13,7 +15,7 @@ conda activate winter-school
 
 
 ## 1. The training script
-The training script for the recurrent approach is `train_conv.py` (located in the python directory) and has the next flags:
+The training script for the convolutional approach is `train_conv.py` (located in the python directory) and has the following flags:
 
 ### General Arguments
 
@@ -48,14 +50,14 @@ The training script for the recurrent approach is `train_conv.py` (located in th
 `--starting-epoch`: Number of epoch in which to resume the experiment. (OPTIONAL)
 
 
-You can show the flags in the terminal by using the flag `--help`:
+You can show the help about the different flags in the terminal by using the flag `--help`:
 ```
 python python/train_conv.py --help
 ```
 
 
 ## 2. The test script
-The test script for the recurrent approach is `test_conv.py` and has the next flags:
+The test script for the convolutional approach is `test_conv.py` and has the following flags:
 
 ### General Arguments
 
@@ -93,17 +95,20 @@ The test script for the recurrent approach is `test_conv.py` and has the next fl
 
 
 
-You can show the flags in the terminal by using the flag `--help`:
+You can show the help about the different flags in the terminal by using the flag `--help`:
 ```
-python python/test_recurrent_detector.py --help
+python python/test_conv.py --help
 ```
 
 
 ## 3. Run a complete experiment
-Now, we are going to run a complete experiment. We will train the convolutional neural network model "conv1" for patient `ćhb01` using a 10-second-long sliding window shifted every 250ms to generate samples. We will run 5 epochs and the optimizer and initial learning rate will be Adam and 0.0001 respectively.
+Now, we are going to run a complete experiment.
+We will train the convolutional neural network model **"conv1"** for patient `chb01` using a 10-second-long sliding
+window shifted every 250 ms to generate samples with a shape equal to `(2560, 23)`,
+i.e., a portion of 10 seconds of the raw signal including the 23 channels.
 
 ### Training
-To run that training experiment, we will run the following command:
+With the following command line example, the training process will iterate 5 epochs with the optimizer Adam and with an initial learning rate equal to 0.0001.
 ```
 # Inside uc13_lab/UC13_pipeline/
 python python/train_conv.py \
@@ -119,15 +124,31 @@ python python/train_conv.py \
     --shift 0.5
 ```
 
-When running a training script, it will output the results while training.
-It will also create a directory to store the best models and training results. This will be inside the `experiments/` directory, and the name of the experiment folder will have some of the arguments that were used, and also the time and date when the experiment was launched.
-Inside an experiment directory, we can find a text file with the training results and a `models` directory where the best models are stored.
+By running the above script, the temporary results, i.e., the evolution of the learning process, is shown on the screen.
+However, this script also creates a directory named `experiments/` where models and training results are stored.
+Inside the `experiments/` directory, another directory is created for each experiment including
+(i) the name of the experiment,
+(ii) some of the configuration hyperparameters that were used, and
+(iii) the date and time when the experiment was launched.
+Inside the directory of a given experiment, we can find a text file with the training results and a directory
+named `models` where the best models are stored.
 
 ### Test
-After training the model, we will perform an inference of the test set in order to get the results. To do that, we will need the index file of the test set, the model identifier, the patient identifier and the experiment directory (which is the one we have just explaned).
-We will test the model with the following post processing parameters: a post-inference window of 20 seconds, an alpha_pos ratio of 0.4, an alpha_neg ratio of 0.4 and a detection threshold of 20 seconds.
+Once the training process is complete, we can evaluate models using the test set in order to get the results.
+To do that, we need
+(i) the index file of the test set,
+(ii) the model identifier,
+(iii) the patient identifier and
+(iv) the directory of the experiment (as explained in the previous paragraph).
 
-To run the test of the experiment, we can run the following command:
+Next example evaluates a pre-trained model with the following post processing parameters:
+a post-inference window of 20 seconds,
+an **alpha_pos** ratio of 0.4,
+an **alpha_neg** ratio of 0.4, and
+a detection threshold of 20 seconds.
+
+
+Here the command line to evaluate a previously trained model:
 ```
 python python/test_conv.py \
     --index indexes_detection/chb01/test.txt \
@@ -145,9 +166,14 @@ python python/test_conv.py \
     --detection-threshold 20
 ```
 
-When running this script, it will perform the inference of the test samples through the trained neural network, and it will do a post processing analysis to act as a detector.
 
-After this, we will have launched a complete experiment on the Use Case 13 with the convolutional approach.
+When this process is executed, in addition to inferring from the test samples,
+the post-processing analysis explained in the slides is also performed to act
+as a detector of epileptic seizures.
+In this case, the test samples are processed in strict chronological order.
+
+By performing all the steps explained above, we will have carried out a complete experiment in the Use Case 13 with the convolutional approach.
 
 ## Proposed Exercises
-We propose the attendees to run a similar experiment modifying some of the parameters. You can feel free to modify any of the parameters, taking into account that some of them are related to each other.
+We propose the attendees to run similar experiments by modifying some of the hyperparameters.
+You can modify any of the hyperparameters keeping in mind that some of them are related to each other.
