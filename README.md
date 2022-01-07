@@ -75,14 +75,14 @@ Lab exercises will be guided by junior and senior researchers involved in the De
 
 7. Presentation of the other three ICT-11 projects, Friday morning
 
-    - ICT-11 (a) , by (Project Coordinator)
-    - ICT-11 (b) , by (Project Coordinator)
-    - ICT-11 (c) , by (Project Coordinator)
+    - ICT-11 (a) by (Project Coordinator)
+    - ICT-11 (b) by (Project Coordinator)
+    - ICT-11 (c) by (Project Coordinator)
 
 
 ### Lab sessions
 
-1. [ECVL & EDDL environment for potential developer](https://github.com/deephealthproject/winter-school/tree/main/lab/00_ecvl_eddl_environment)
+1. [ECVL & EDDL environment for potential developers](https://github.com/deephealthproject/winter-school/tree/main/lab/00_ecvl_eddl_environment)
     
     Monday afternoon from 3 PM to 5 PM.
 
@@ -94,14 +94,15 @@ Lab exercises will be guided by junior and senior researchers involved in the De
     Monday afternoon from 5 PM to 6 PM.
 
     The lab team will remain available till 7 PM in order to assist attendees to complete the installation on their own computers
-    (laptop or desktop with at least one GPU card, with no GPU cards it is not feasible to run the lab exercises scheduled for
+    (laptop or desktop with at least one GPU card. With no GPU cards it is not feasible to run the lab exercises scheduled for
     the next lab sessions).
 
     **IMPORTANT NOTICE**: due to the time required to download and install
     (i) [Anaconda for Python 3](https://www.anaconda.com/products/individual),
     (ii) the required packages when configuring the `winter-school` environment, and
     (iii) to install both ECVL and EDDL libraries,
-    we suggest attendees to try the installation by following the [same guide](https://github.com/deephealthproject/winter-school/tree/main/lab/01_installation)
+    we suggest attendees to try the installation some days before the winter school
+    by following the [same guide](https://github.com/deephealthproject/winter-school/tree/main/lab/01_installation)
     we will use during this session.
 
 
@@ -114,9 +115,11 @@ Lab exercises will be guided by junior and senior researchers involved in the De
 
     Each use case will be explained in the following order using the correspoding slides and the guide:
         
-        1. [Use case 15 based on X-ray images from COVID-19 patients and ](https://github.com/deephealthproject/winter-school/tree/main/lab/02_uc15_based_examples)
-        2. [Use case 12 based on RGB images from skin to detect and segment skin cancer](https://github.com/deephealthproject/winter-school/tree/main/lab/03_uc12_based_examples)
-        3. [Use case 13 based on EEG raw signals to detect epileptic seizures](https://github.com/deephealthproject/winter-school/tree/main/lab/04_uc13_based_examples)
+    1. [Use case 15 based on X-ray images from COVID-19 patients and ](https://github.com/deephealthproject/winter-school/tree/main/lab/02_uc15_based_examples)
+
+    2. [Use case 12 based on RGB images from skin to detect and segment skin cancer](https://github.com/deephealthproject/winter-school/tree/main/lab/03_uc12_based_examples)
+
+    3. [Use case 13 based on EEG raw signals to detect epileptic seizures](https://github.com/deephealthproject/winter-school/tree/main/lab/04_uc13_based_examples)
 
 
 4. Lab exercises to be run in distributed mode using datassets from several DeepHealth use cases and running on a HPC environment
@@ -127,14 +130,21 @@ Lab exercises will be guided by junior and senior researchers involved in the De
 
 
 Lab team coordinators (in alphabetical order):
+
     - Barbara Cantalupo (UNITO)
+
     - Jon Ander G&oacute;mez (UPV)
+
     - Costantino Grana (UNIMORE)
 
 Lab team (in alphabetical order):
+
     - Federico Bolelli (UNIMORE)
+
     - Salvador Carri&oacute;n (UPV)
+
     - &Aacute;lvaro L&oacute;pez (UPV)
+
     - Javier Mart&iacute;nez (UPV)
 
 
