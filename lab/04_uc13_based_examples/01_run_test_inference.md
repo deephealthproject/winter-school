@@ -8,7 +8,7 @@ conda activate winter-school
 ## 1. The test script
 For running the inference we will use a pretrained model for the patient `chb01`. We will use a script (**test_recurrent.py**) that takes some arguments and performs the inference of the test set and prints the obtained results.
 
-The script has many flags, that we will explore in the following guides. Just to see them as a first approach, we will do the following steps:
+The script has many flags, that we will explore in the following guides. Just to see them as a first approach, we can do the following steps:
 ```
 # Go to the pipeline directory (not the lab directory)
 cd uc13_lab/UC13_pìpeline
