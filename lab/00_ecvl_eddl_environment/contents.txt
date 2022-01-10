@@ -3,23 +3,23 @@ Tentative schedule for two hours:
 ECVL: (30')
     functionalities
 
-EDDL: (30')
+EDDL: (15')
     functionalities
 
 ONNX in EDDL: (30')
     functionalities
     model zoo
 
-Basic examples: (10')
-  - MNIST (classification task with CNNs)
+Basic examples: (+30')
+  - MNIST: classification task with CNNs (10')
     - train + inference
-  - IMBD  (classification task with RNNs)
+  - IMBD: classification task with RNNs (10')
     - train + inference
-
-Advanced example: (10')
-  - Imagenet (classification task with CNNs)
-    - only inference from a pretrained ResNet in ONNX
+  - CIFAR: classification task with CNNs (10')
+    - train + inference
 
 
 Pending:
  - which short example could be used for illustrating the use of ECVL?
+
+ NOTE: if we manage to complete this session in less than two hours
