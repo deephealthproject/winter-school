@@ -6,7 +6,7 @@ ECVL: (30')
 EDDL: (15')
     functionalities
 
-ONNX in EDDL: (30')
+ONNX in EDDL: (15')
     functionalities
     model zoo
 
