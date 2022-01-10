@@ -12,11 +12,11 @@ ONNX in EDDL: (15')
 
 Basic examples: (+30')
   - MNIST: classification task with CNNs (10')
-    - train + inference
+    - in the installation session train + inference will be shown
   - IMBD: classification task with RNNs (10')
-    - train + inference
+    - in the installation session train + inference will be shown
   - CIFAR: classification task with CNNs (10')
-    - train + inference
+    - in the installation session train + inference will be shown
 
 
 Pending:

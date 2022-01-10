@@ -1,12 +1,14 @@
 Tentative agenda for several sessions
 
-Thursday afternoon:
+Tuesday afternoon:
 
 - UC13
-  - Intro to UC13 (15')
+  - Intro to UC13 (10')
     - introduction to the task
     - dataset description
-  - Approach to the problem using RNNs (25')
+    - dataset preparation: data preprocessing
+
+  - Approach to the problem using RNNs (15')
     - Sequences: DataGenerator
     - Topologies
       - GRU based
@@ -17,6 +19,8 @@ Thursday afternoon:
       - at the post-inference level
     - Results
  
+  - Approach to the problem using CNNs (10')
+
   - Test scripts with the best model in ONNX to reproduce results
 
 

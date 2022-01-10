@@ -1,4 +1,4 @@
-Tentative schedule for 1 hour:
+Schedule for 1 hour:
 
 1. Conda environment preparation
     - Conda installation
@@ -10,6 +10,8 @@ Tentative schedule for 1 hour:
 3. Clone PyEDDL repository to test the installation by running some examples
 
 4. Show attendees links where example datasets are available
+
+5. Run some examples available in the repotory for this session.
 
 
 
