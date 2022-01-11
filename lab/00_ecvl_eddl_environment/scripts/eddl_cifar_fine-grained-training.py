@@ -46,7 +46,7 @@ def main(args):
 
     if not args.from_ckpt:
         # Define the model topology
-        input_shape = [3, 32, 32]
+        input_shape = [3, 32, 32]  # EDDL needs channel first images
         num_classes = 10
         in_ = Input(input_shape)
         layer = ReLu(BatchNormalization(Conv(in_, 32, [3, 3]), affine=True))

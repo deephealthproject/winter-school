@@ -33,6 +33,7 @@ def main(args):
     x_test = Tensor.load('imdb_2000_tsX.bin')
     y_test = Tensor.load('imdb_2000_tsY.bin')
 
+    # All the samples of the dataset have a sequence length of 250
     seq_length = 250
     # Reshape data to (samples, sequence_length, input_dim)
     x_train.reshape_([x_train.shape[0], seq_length, 1])
@@ -54,7 +55,7 @@ def main(args):
         embed_dim = 33
         in_ = Input([1])  # 1 word. Skip the sequence dimension
         layer = Embedding(in_, vocab_size, 1, embed_dim)
-        layer = RandomUniform(layer, -0.05, 0.05)
+        layer = RandomUniform(layer, -0.05, 0.05)  # Change the initializer
         layer = LSTM(layer, 64)
         layer = ReLu(Dense(layer, 32))
         out_ = Sigmoid(Dense(layer, 1))

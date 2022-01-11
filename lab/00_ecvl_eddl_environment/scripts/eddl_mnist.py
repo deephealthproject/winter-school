@@ -48,7 +48,7 @@ def main(args):
         # Define the model topology
         num_classes = 10
         in_ = Input([784])
-        layer = Reshape(in_, [1, 28, 28])
+        layer = Reshape(in_, [1, 28, 28])  # EDDL needs channel first images
         layer = ReLu(BatchNormalization(Conv(layer, 32, [3, 3]), affine=True))
         layer = MaxPool(layer, [2, 2])
         layer = ReLu(BatchNormalization(Conv(layer, 64, [3, 3]), affine=True))
