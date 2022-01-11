@@ -13,7 +13,11 @@ Create a directory to store the data:
     mkdir data
 
 The dataset has two versions, one with the images with size 256x256 and other with size 512x512. Each version is in a separate zip
-file that you can download [here](https://upvedues-my.sharepoint.com/:f:/g/personal/salcarpo_upv_edu_es/ErvSniya5ndOsXE-T3mffTEBsc0aaW4MjMGpGWqhT8VUwg?e=KLByo0).
+file that you can download from
+[a sharepoint folder](https://upvedues-my.sharepoint.com/:f:/g/personal/salcarpo_upv_edu_es/ErvSniya5ndOsXE-T3mffTEBsc0aaW4MjMGpGWqhT8VUwg?e=KLByo0)
+or from a Dropbox folder _not ready yet_
+or [from a local UPV server](https://clocalprog.dsic.upv.es/winter-school/data/),
+_do not worry about the certificate, you can trust it, it was generated locally by the coordinator of this winter school (Jon Ander G&oacute;mez)_.
 
 Download the files **uc15_images-256x256.zip** (1.1GB) and **uc15_images-512x512.zip** (3.6GB) and extract them in the directory that we created **uc15_lab/data**
 
