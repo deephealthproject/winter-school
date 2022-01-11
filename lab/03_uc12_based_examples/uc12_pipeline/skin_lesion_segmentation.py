@@ -110,10 +110,8 @@ def main(args):
 
     miou = 0.
     if args.train:
-        num_samples_train = len(d.GetSplit())
-        num_batches_train = num_samples_train // args.batch_size
-        num_samples_val = len(d.GetSplit(ecvl.SplitType.validation))
-        num_batches_val = num_samples_val // args.batch_size
+        num_batches_train = d.GetNumBatches("training")
+        num_batches_val = d.GetNumBatches("validation")
         evaluator = utils.Evaluator()
 
         print('Starting training')
@@ -133,19 +131,20 @@ def main(args):
             d.Stop()
 
             d.SetSplit(ecvl.SplitType.validation)
-            d.ResetBatch(ecvl.SplitType.validation, shuffle=True)
-            d.Start()
+            d.ResetBatch(ecvl.SplitType.validation, shuffle=False)
             eddl.reset_loss(net)
             evaluator.ResetEval()
+            eddl.set_mode(net, 0)
+            d.Start()
 
             for b in range(num_batches_val):
-                n = 0
                 print(
                     f'Validation - epoch [{e + 1}/{args.epochs}] - batch [{b + 1}/{num_batches_val}]')
-                _, x, y = d.GetBatch()
+                samples, x, y = d.GetBatch()
                 eddl.forward(net, [x])
                 output = eddl.getOutput(out)
-                for bs in range(args.batch_size):
+                current_bs = x.shape[0]
+                for bs in range(current_bs):
                     img = output.select([str(bs)])
                     gt = y.select([str(bs)])
                     img_np = np.array(img, copy=False)
@@ -159,7 +158,7 @@ def main(args):
                         orig_img.mult_(255.)
                         orig_img.normalize_(0., 255.)
                         orig_img_t = ecvl.TensorToView(orig_img)
-                        orig_img_t.colortype_ = ecvl.ColorType.BGR
+                        orig_img_t.colortype_ = ecvl.ColorType.RGB
                         orig_img_t.channels_ = 'xyc'
                         # Draw the Predicted mask
                         img_t = ecvl.TensorToView(img)
@@ -174,10 +173,10 @@ def main(args):
                         tmp_np = np.array(tmp, copy=False)
                         for cseq in contours:
                             for c in cseq:
-                                tmp_np[c[0], c[1], 0] = 0
+                                tmp_np[c[0], c[1], 0] = 255
                                 tmp_np[c[0], c[1], 1] = 0
-                                tmp_np[c[0], c[1], 2] = 255
-                        filename = d.samples_[d.GetSplit()[n]].location_[0]
+                                tmp_np[c[0], c[1], 2] = 0
+                        filename = samples[bs].location_[0]
                         head, tail = os.path.splitext(os.path.basename(filename))
                         bname = '%s.png' % head
                         output_fn = os.path.join(args.out_dir, bname)
@@ -187,11 +186,10 @@ def main(args):
                         gt_t.colortype_ = ecvl.ColorType.GRAY
                         gt_t.channels_ = 'xyc'
                         gt.mult_(255.)
-                        gt_filename = d.samples_[d.GetSplit()[n]].label_path_
+                        gt_filename = samples[bs].label_path_
                         gt_fn = os.path.join(args.out_dir,
                                              os.path.basename(gt_filename))
                         ecvl.ImWrite(gt_fn, gt_t)
-                    n += 1
                 print()
 
             d.Stop()  # Stop validation split generator
@@ -206,21 +204,20 @@ def main(args):
                                      f'isic_segm_{args.model}_epoch_{e + 1}.onnx')
                 eddl.save_net_to_onnx_file(net, filepath)
                 print('Weights saved')
-    elif args.test:
+    if args.test:
         evaluator = utils.Evaluator()
         evaluator.ResetEval()
 
         d.SetSplit(ecvl.SplitType.test)
+        num_batches_test = d.GetNumBatches("test")
         d.Start()
-        num_samples_test = len(d.GetSplit())
-        num_batches_test = num_samples_test // batch_size
         for b in range(num_batches_test):
-            n = 0
             print(f'Test - batch [{b + 1}/{num_batches_test}]')
-            _, x, y = d.GetBatch()
+            samples, x, y = d.GetBatch()
             eddl.forward(net, [x])
             output = eddl.getOutput(out)
-            for bs in range(args.batch_size):
+            current_bs = x.shape[0]
+            for bs in range(current_bs):
                 img = output.select([str(bs)])
                 gt = y.select([str(bs)])
                 img_np = np.array(img, copy=False)
@@ -234,7 +231,7 @@ def main(args):
                     orig_img.mult_(255.)
                     orig_img.normalize_(0., 255.)
                     orig_img_t = ecvl.TensorToView(orig_img)
-                    orig_img_t.colortype_ = ecvl.ColorType.BGR
+                    orig_img_t.colortype_ = ecvl.ColorType.RGB
                     orig_img_t.channels_ = 'xyc'
                     # Draw the Predicted mask
                     img_t = ecvl.TensorToView(img)
@@ -249,10 +246,10 @@ def main(args):
                     tmp_np = np.array(tmp, copy=False)
                     for cseq in contours:
                         for c in cseq:
-                            tmp_np[c[0], c[1], 0] = 0
+                            tmp_np[c[0], c[1], 0] = 255
                             tmp_np[c[0], c[1], 1] = 0
-                            tmp_np[c[0], c[1], 2] = 255
-                    filename = d.samples_[d.GetSplit()[n]].location_[0]
+                            tmp_np[c[0], c[1], 2] = 0
+                    filename = samples[bs].location_[0]
                     head, tail = os.path.splitext(os.path.basename(filename))
                     bname = '%s.png' % head
                     output_fn = os.path.join(args.out_dir, bname)
@@ -262,11 +259,10 @@ def main(args):
                     gt_t.colortype_ = ecvl.ColorType.GRAY
                     gt_t.channels_ = 'xyc'
                     gt.mult_(255.)
-                    gt_filename = d.samples_[d.GetSplit()[n]].label_path_
+                    gt_filename = samples[bs].label_path_
                     gt_fn = os.path.join(args.out_dir,
                                          os.path.basename(gt_filename))
                     ecvl.ImWrite(gt_fn, gt_t)
-                n += 1
         d.Stop()
         miou = evaluator.MIoU()
         print(f'Test - Total MIoU: {miou:.3f}')
