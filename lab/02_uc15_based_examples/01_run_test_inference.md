@@ -51,7 +51,12 @@ That command will show the following output:
 ## 2. Get a pretrained model in ONNX format
 In order to run the script we will need a pretrained model, you can take one of this:
 - For the 256x256 dataset, with an accuracy on test of 85.71% (normal vs COVID 19): [download uc15_256x256_ResNet101.onnx](https://upvedues-my.sharepoint.com/:u:/g/personal/salcarpo_upv_edu_es/EfX00LcDeINIuMvPnt1_aUABQlFO3zPletzohRtq5O9E3g?e=AbODWc)
+  or from a Dropbox folder _not ready yet_
+  or [from a local UPV server](https://clocalprog.dsic.upv.es/winter-school/data/uc15_256x256_ResNet101.onnx),
+  _do not worry about the certificate, you can trust it, it was generated locally by Jon Ander Gómez, coordinator of this winter school_.
 - For the 512x512 dataset, with an accuracy on test of 88.57% (normal vs COVID 19): [download uc15_512x512_ResNet101.onnx](https://upvedues-my.sharepoint.com/:u:/g/personal/salcarpo_upv_edu_es/EaLfcNGvMlFElO9Ml0-GI2UBxLxG5nOLVRBPgZe7F8S9rA?e=2i1oD0)
+  or from a Dropbox folder _not ready yet_
+  or [from a local UPV server](https://clocalprog.dsic.upv.es/winter-school/data/uc15_512x512_ResNet101.onnx).
 
 ## 3. Run inference
 Once we have the data and the model we can run inference with this command:
