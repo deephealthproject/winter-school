@@ -17,7 +17,7 @@ file that you can download from
 [a sharepoint folder](https://upvedues-my.sharepoint.com/:f:/g/personal/salcarpo_upv_edu_es/ErvSniya5ndOsXE-T3mffTEBsc0aaW4MjMGpGWqhT8VUwg?e=KLByo0)
 or from a Dropbox folder _not ready yet_
 or [from a local UPV server](https://clocalprog.dsic.upv.es/winter-school/data/),
-_do not worry about the certificate, you can trust it, it was generated locally by Jon Ander Gómez, coordinator of this winter school_.
+_do not worry about the certificate, you can trust it, it was generated locally by coordinator of this winter school (Jon Ander G&oacute;mez)_.
 
 Download the files **uc15_images-256x256.zip** (1.1GB) and **uc15_images-512x512.zip** (3.6GB) and extract them in the directory that we created **uc15_lab/data**
 
