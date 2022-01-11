@@ -53,7 +53,7 @@ In order to run the script we will need a pretrained model, you can take one of 
 - For the 256x256 dataset, with an accuracy on test of 85.71% (normal vs COVID 19): [download uc15_256x256_ResNet101.onnx](https://upvedues-my.sharepoint.com/:u:/g/personal/salcarpo_upv_edu_es/EfX00LcDeINIuMvPnt1_aUABQlFO3zPletzohRtq5O9E3g?e=AbODWc)
   or from a Dropbox folder _not ready yet_
   or [from a local UPV server](https://clocalprog.dsic.upv.es/winter-school/data/uc15_256x256_ResNet101.onnx),
-  _do not worry about the certificate, you can trust it, it was generated locally by coordinator of this winter school (Jon Ander G&oacute;mez)_.
+  _do not worry about the certificate, you can trust it, it was generated locally by the coordinator of this winter school (Jon Ander G&oacute;mez)_.
 - For the 512x512 dataset, with an accuracy on test of 88.57% (normal vs COVID 19): [download uc15_512x512_ResNet101.onnx](https://upvedues-my.sharepoint.com/:u:/g/personal/salcarpo_upv_edu_es/EaLfcNGvMlFElO9Ml0-GI2UBxLxG5nOLVRBPgZe7F8S9rA?e=2i1oD0)
   or from a Dropbox folder _not ready yet_
   or [from a local UPV server](https://clocalprog.dsic.upv.es/winter-school/data/uc15_512x512_ResNet101.onnx).

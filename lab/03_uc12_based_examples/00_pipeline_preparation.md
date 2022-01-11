@@ -14,7 +14,11 @@ Create a directory to store the data:
     # Inside the winter-school/lab/03_uc12_based_examples/uc12_pipeline directory
     mkdir data
 
-Download the dataset zip file from [here](https://drive.google.com/uc?id=1RyYa32x9aqwd2kkQpCZ4Xa2h_VcgH3wI&export=download) (12GB).
+Download the dataset zip file from
+[here](https://drive.google.com/uc?id=1RyYa32x9aqwd2kkQpCZ4Xa2h_VcgH3wI&export=download) (12GB)
+or from a Dropbox folder _not ready yet_
+or [from a local UPV server](https://clocalprog.dsic.upv.es/winter-school/data/isic_segmentation.zip),
+_do not worry about the certificate, you can trust it, it was generated locally by the coordinator of this winter school (Jon Ander G&oacute;mez)_.
 
 Extract the downloaded zip file in the directory that we created **winter-school/lab/03_uc12_based_examples/uc12_pipeline/data**
 
