@@ -86,7 +86,7 @@ Once we have the data and the model we can run inference with this command:
 
         # Inside uc15_lab/UC15_pipeline/pyeddl_pipeline
         python test.py \
-            --yaml-path ../../data/512x512/ecvl_512x512_normal-vs-covid_only-r0.yaml \
+            --yaml-path ../../data/512x512/ecvl_512x512_normal-vs-covid-vs-infiltrates-vs-pneumonia_only-r0.yaml \
             --onnx-files ~/Downloads/uc15_512x512_normal-vs-covid-vs-infiltrates-vs-pneumonia.onnx \
             --target-size 512 512 \
             --multiclass \
