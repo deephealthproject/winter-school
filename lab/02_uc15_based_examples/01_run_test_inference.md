@@ -52,14 +52,14 @@ That command will show the following output:
 In order to run the script we will need a pretrained model, you can take one of this:
 - For the 256x256 dataset, with an accuracy on test of 88.57% (normal vs COVID 19, with BCE loss): [download uc15_256x256_normal-vs-covid_BCE-loss.onnx](https://upvedues-my.sharepoint.com/:u:/g/personal/salcarpo_upv_edu_es/ERjdPkf8_89Oh0wADBdC-jwB6mHbgzoztiwGdtefnlAsJw?e=3N1SpM)
   or from a Dropbox folder _not ready yet_
-  or [from a local UPV server](PENDING_NEW_LINK),
+  or [from a local UPV server](https://clocalprog.dsic.upv.es/winter-school/data/uc15_256x256_normal-vs-covid_BCE-loss.onnx),
   _do not worry about the certificate, you can trust it, it was generated locally by the coordinator of this winter school (Jon Ander G&oacute;mez)_.
 - For the 512x512 dataset, with an accuracy on test of 88.57% (normal vs COVID 19, with CE loss): [download uc15_512x512_normal-vs-covid_CE-loss.onnx](https://upvedues-my.sharepoint.com/:u:/g/personal/salcarpo_upv_edu_es/EaLfcNGvMlFElO9Ml0-GI2UBxLxG5nOLVRBPgZe7F8S9rA?e=zMhyDj)
   or from a Dropbox folder _not ready yet_
-  or [from a local UPV server](PENDING_NEW_LINK).
+  or [from a local UPV server](https://clocalprog.dsic.upv.es/winter-school/data/uc15_512x512_normal-vs-covid_CE-loss.onnx).
 - For the 512x512 dataset and multilabel classification (normal vs COVID 19 vs infiltrates vs pneumonia): [download uc15_512x512_normal-vs-covid-vs-infiltrates-vs-pneumonia.onnx](https://upvedues-my.sharepoint.com/:u:/g/personal/salcarpo_upv_edu_es/EWaFqI3auQlGuTIqhM-9lSEBkjq9_h0XFplSfakXBDX7fw?e=WDeAhb)
   or from a Dropbox folder _not ready yet_
-  or [from a local UPV server](PENDING_NEW_LINK).
+  or [from a local UPV server](https://clocalprog.dsic.upv.es/winter-school/data/uc15_512x512_normal-vs-covid-vs-infiltrates-vs-pneumonia.onnx).
 
 ## 3. Run inference
 Once we have the data and the model we can run inference with this command:
