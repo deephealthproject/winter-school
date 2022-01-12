@@ -25,6 +25,8 @@ Inside the extracted folder of each dataset you will find the following:
 
 - ***ecvl_256x256_normal-vs-covid_only-r0.yaml***: The YAML configuration file for the ECVL dataset. It contains the paths to the images, their corresponding labels and the definition of the dataset splits (training, validation and test)
 - ***ecvl_256x256_normal-vs-covid.yaml***: Is a file of the same type as *ecvl_256x256_normal-vs-covid_only-r0.yaml*, but in this case the dataset was augmented by replicating each sample 15 times applying some data augmentation to increase the size of the dataset. The augmentations applied here are different from the ones used in the training pipeline
+- ***ecvl_256x256_normal-vs-covid-vs-infiltrates-vs-pneumonia_only-r0.yaml***: The same type of file as *ecvl_256x256_normal-vs-covid_only-r0.yaml*, but for 4 class multilabel classification
+- ***ecvl_256x256_normal-vs-covid-vs-infiltrates-vs-pneumonia.yaml***: The same type of file as *ecvl_256x256_normal-vs-covid.yaml*, but for 4 class multilabel classification
 - ***data*** folder: This directory contains the original CSV files with the dataset partitioning (made by us) from which we created the ECVL YAML files
 - ***images*** folder: It contains all the images in PNG format
 

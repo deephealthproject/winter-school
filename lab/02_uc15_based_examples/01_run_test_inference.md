@@ -50,23 +50,27 @@ That command will show the following output:
 
 ## 2. Get a pretrained model in ONNX format
 In order to run the script we will need a pretrained model, you can take one of this:
-- For the 256x256 dataset, with an accuracy on test of 85.71% (normal vs COVID 19): [download uc15_256x256_ResNet101.onnx](https://upvedues-my.sharepoint.com/:u:/g/personal/salcarpo_upv_edu_es/EfX00LcDeINIuMvPnt1_aUABQlFO3zPletzohRtq5O9E3g?e=AbODWc)
+- For the 256x256 dataset, with an accuracy on test of 88.57% (normal vs COVID 19, with BCE loss): [download uc15_256x256_normal-vs-covid_BCE-loss.onnx](https://upvedues-my.sharepoint.com/:u:/g/personal/salcarpo_upv_edu_es/ERjdPkf8_89Oh0wADBdC-jwB6mHbgzoztiwGdtefnlAsJw?e=3N1SpM)
   or from a Dropbox folder _not ready yet_
-  or [from a local UPV server](https://clocalprog.dsic.upv.es/winter-school/data/uc15_256x256_ResNet101.onnx),
+  or [from a local UPV server](PENDING_NEW_LINK),
   _do not worry about the certificate, you can trust it, it was generated locally by the coordinator of this winter school (Jon Ander G&oacute;mez)_.
-- For the 512x512 dataset, with an accuracy on test of 88.57% (normal vs COVID 19): [download uc15_512x512_ResNet101.onnx](https://upvedues-my.sharepoint.com/:u:/g/personal/salcarpo_upv_edu_es/EaLfcNGvMlFElO9Ml0-GI2UBxLxG5nOLVRBPgZe7F8S9rA?e=2i1oD0)
+- For the 512x512 dataset, with an accuracy on test of 88.57% (normal vs COVID 19, with CE loss): [download uc15_512x512_normal-vs-covid_CE-loss.onnx](https://upvedues-my.sharepoint.com/:u:/g/personal/salcarpo_upv_edu_es/EaLfcNGvMlFElO9Ml0-GI2UBxLxG5nOLVRBPgZe7F8S9rA?e=zMhyDj)
   or from a Dropbox folder _not ready yet_
-  or [from a local UPV server](https://clocalprog.dsic.upv.es/winter-school/data/uc15_512x512_ResNet101.onnx).
+  or [from a local UPV server](PENDING_NEW_LINK).
+- For the 512x512 dataset and multilabel classification (normal vs COVID 19 vs infiltrates vs pneumonia): [download uc15_512x512_normal-vs-covid-vs-infiltrates-vs-pneumonia.onnx](https://upvedues-my.sharepoint.com/:u:/g/personal/salcarpo_upv_edu_es/EWaFqI3auQlGuTIqhM-9lSEBkjq9_h0XFplSfakXBDX7fw?e=WDeAhb)
+  or from a Dropbox folder _not ready yet_
+  or [from a local UPV server](PENDING_NEW_LINK).
 
 ## 3. Run inference
 Once we have the data and the model we can run inference with this command:
-- For the 256x256 dataset and ONNX model:
+- For the 256x256 dataset and ONNX model (with BCE loss):
 
         # Inside uc15_lab/UC15_pipeline/pyeddl_pipeline
         python test.py \
             --yaml-path ../../data/256x256/ecvl_256x256_normal-vs-covid_only-r0.yaml \
-            --onnx-files ~/Downloads/uc15_256x256_ResNet101.onnx \
+            --onnx-files ~/Downloads/uc15_256x256_normal-vs-covid_BCE-loss.onnx \
             --target-size 256 256 \
+            --normal-vs-classification \
             --rgb
         
 - For the 512x512 dataset and ONNX model:
@@ -74,8 +78,19 @@ Once we have the data and the model we can run inference with this command:
         # Inside uc15_lab/UC15_pipeline/pyeddl_pipeline
         python test.py \
             --yaml-path ../../data/512x512/ecvl_512x512_normal-vs-covid_only-r0.yaml \
-            --onnx-files ~/Downloads/uc15_512x512_ResNet101.onnx \
+            --onnx-files ~/Downloads/uc15_512x512_normal-vs-covid_CE-loss.onnx \
             --target-size 512 512 \
+            --rgb
+
+- For the 512x512 dataset for multilabel classification and ONNX model:
+
+        # Inside uc15_lab/UC15_pipeline/pyeddl_pipeline
+        python test.py \
+            --yaml-path ../../data/512x512/ecvl_512x512_normal-vs-covid_only-r0.yaml \
+            --onnx-files ~/Downloads/uc15_512x512_normal-vs-covid-vs-infiltrates-vs-pneumonia.onnx \
+            --target-size 512 512 \
+            --multiclass \
+            --binary-loss \
             --rgb
 
 ***Remember*** to combine well the yaml file path, the onnx model and the target size depending on the version of the dataset used (256x256 or 512x512).
