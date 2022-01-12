@@ -141,6 +141,7 @@ Lab exercises will be guided by junior and senior researchers involved in the De
 ### Lab team (in alphabetical order):
 
 - Federico Bolelli (UNIMORE),
+  Iacopo Colonnelli (UNITO),
   Salvador Carri&oacute;n (UPV),
   &Aacute;lvaro L&oacute;pez (UPV),
   Javier Mart&iacute;nez (UPV)
