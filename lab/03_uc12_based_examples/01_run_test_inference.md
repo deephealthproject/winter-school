@@ -47,7 +47,7 @@ For doing inference we will uses the flad *--no-train-val* to avoid the training
 ## 2. Get a pretrained model in ONNX format
 You can download a pretrained model based on the Unet architecture from
 [here](https://drive.google.com/uc?id=16Xu_w1LJa1m2f7SIDxInmS5lv6PN_s7G&export=download)
-or from a Dropbox folder _not ready yet_
+or [from a Dropbox folder](https://www.dropbox.com/sh/vqdewy1ocqpkiu4/AABd60m7xgy2hRFGPQbw5tAba/UC12Segm_unet_224_bce.onnx?dl=0)
 or [from a local UPV server](https://clocalprog.dsic.upv.es/winter-school/data/UC12Segm_unet_224_bce.onnx),
 _do not worry about the certificate, you can trust it, it was generated locally by the coordinator of this winter school (Jon Ander G&oacute;mez)_.
 
