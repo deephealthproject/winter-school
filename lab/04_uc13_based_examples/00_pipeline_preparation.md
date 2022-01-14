@@ -8,7 +8,7 @@ cd uc13_lab
 
 ## 2. Download and extract the data
 You need to download the data from [here](https://upvedues-my.sharepoint.com/:u:/g/personal/salcarpo_upv_edu_es/EUByteF4uH1HorGCvqlat0QBSmT3wE2COc85i4mf80VzbA?e=yi4Yok)
-or from a Dropbox folder _not ready yet_
+or [from a Dropbox folder](https://www.dropbox.com/sh/vqdewy1ocqpkiu4/AADiUCojhLOrcxNmCUwtopuGa/clean_signals.zip?dl=0)
 or [from a local UPV server](https://clocalprog.dsic.upv.es/winter-school/data/clean_signals.zip),
 _do not worry about the certificate, you can trust it, it was generated locally by the coordinator of this winter school (Jon Ander G&oacute;mez)_.
 
