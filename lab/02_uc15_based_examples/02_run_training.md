@@ -121,6 +121,27 @@ As an example, you could run an experiment with the following command:
             --regularization-factor 0.0002 \
             --datagen-workers 4
 
+If you want to execute an experiment for the 4-class multilabel task, you should add at least the *--multiclass* flag and change the yaml file:
+
+        # Inside uc15_lab/UC15_pipeline/pyeddl_pipeline
+        python train.py \
+            --yaml-path ../../data/512x512/ecvl_512x512_normal-vs-covid-vs-infiltrates-vs-pneumonia_only-r0.yaml \
+            --target-size 512 512 \
+            --rgb \
+            --augmentations 1.1 \
+            --model Pretrained_ResNet50 \
+            --epochs 50 \
+            --frozen-epochs 20 \
+            --optimizer Adam \
+            --learning-rate 0.00001 \
+            --regularization l2 \
+            --regularization-factor 0.0002 \
+            --multiclass \
+            --binary-loss \
+            --datagen-workers 4
+            
+Note: We added the *--multiclass* flag to enable the multilabel classification, and we also used the *--binary-loss* flag to use the BCE instead of the MSE.
+
 ## 3. Training results
 At the end of the training process the script will run the test with the best models by validation loss and accuracy. Those results will be
 displayed and also saved in an experiment folder that will be created in a folder called *experiments* (by default). In that folder you will find
