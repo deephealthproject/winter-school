@@ -40,13 +40,13 @@ Lab exercises will be guided by junior and senior researchers involved in the De
 
 1. Doing Deep Learning with the **European Distributed Deep Learing Library** (EDDL), by Roberto Paredes (UPV)
 
-    - Two sessions: Monday and Tuesday, see schedule.
+    - Two sessions: _Monday 10-11:30 AM_ and _Tuesday 9-10 AM_
 
 2. Doing Computer Vision with the **European Computer Vision Library** (ECVL), by Constantino Grana (UNIMORE)
     
-    - Two sessions: Monday and Tuesday, see schedule.
+    - Two sessions: _Monday 12-1:30 PM_ and _Tuesday 10-11 AM_
 
-3. Medical Imaging
+3. Medical Imaging: _Tuesday 11:30 AM to 1:30 PM_
 
     1. Introduction to medical imaging: a constant learning experience by Marco Grangetto (UNITO)
 
@@ -59,25 +59,26 @@ Lab exercises will be guided by junior and senior researchers involved in the De
 
 4. Medical Image manipulation
 
-    1. DICOM & NifTI formats by Costantino Grana (UNIMORE)
+    1. DICOM & NifTI formats by Costantino Grana (UNIMORE): _Tuesday 3-3:30 PM_
 
-    2. Deep Learning pipeline on histopathology images: detection of prostatic tumor, by Francesco Versaci (CRS4) and Giovanni Busonera (CRS4)
+    2. Deep Learning pipeline on histopathology images:
+       detection of prostatic tumor, by Francesco Versaci (CRS4) and Giovanni Busonera (CRS4): _Tuesday 3:30-4:30 PM_
 
-5. High-Performance Computing, by Eduardo Qui&ntilde;ones (BSC) and Iacopo Colonnelli (UNITO)
+5. High-Performance Computing, by Eduardo Qui&ntilde;ones (BSC) and Iacopo Colonnelli (UNITO): _Wednesday 12-1:30 PM_
 
 6. Heterogeneus Architectures in EDDL
 
-    1. GPU programming in the EDDL, by Roberto Paredes (UPV)
+    1. GPU programming in the EDDL, by Roberto Paredes (UPV): _Thursday 3-4 PM_
 
-    2. Reconfigurable Architectures Support in EDDL, by
+    2. Reconfigurable Architectures Support in EDDL _Thursday 4-6 PM_, by
 
         - Jos&eacute; Flich (UPV) for FPGA,
         - Enzo Tartaglione (UNITO) for pruning, and 
         - Vicent Templier (CEA) for quantization methodologies
 
-7. Presentation of the other ICT-11 projects, Friday morning
+7. Presentation of other ICT-11 projects:
 
-    - 10:30 **HPC & Cloud Security in the LEXIS project**
+    - **HPC & Cloud Security in the LEXIS project** _Friday 10:30-11:30 AM_
         by Frédéric Donnat (Outpost24) and one more from Outpost24
 
         - A theoretical part consisting of an introduction to the Zero-Trust
@@ -90,7 +91,7 @@ Lab exercises will be guided by junior and senior researchers involved in the De
           remediation of security vulnerabilities.
 
 
-    - 11:30 **CYBELE: Making HPC more accessible for Agri-food Business**
+    - **CYBELE: Making HPC more accessible for Agri-food Business** _Friday 11:30 AM - 12:30 PM_
         by Dr. Steven Davy, Head Of Division for Programmable Autonomous Systems at Walton Institute for Information and Communication Systems Science
 
 [Here you can see and download the schedule](figures/schedule.pdf)

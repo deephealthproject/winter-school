@@ -3,9 +3,9 @@
 
 1. [Installation and configuration of ECVL & EDDL](01_installation)
 
-    Monday afternoon from 5 PM to 6 PM.
+    _Monday afternoon from 5 PM to 6 PM_
 
-    The lab team will remain available till 7 PM in order to assist attendees to complete the installation on their own computers
+    The lab team will remain available till _7 PM_ in order to assist attendees to complete the installation on their own computers
     (laptop or desktop with at least one GPU card. With no GPU cards it is not feasible to run the lab exercises scheduled for
     the next lab sessions).
 
@@ -20,7 +20,7 @@
 
 2. Lab exercises to be run in non-distributed mode using datasets from several DeepHealth use cases
 
-    Tuesday afternoon from 4:30 PM till 6 PM, and Wednesday morning from 9 AM till 11:30 AM.
+    _Tuesday afternoon from 4:30 PM till 6 PM, and Wednesday morning from 9 AM till 11:30 AM_
 
     Additionally to the use of the computing infrastructure made available by UNITO to a maximum of 10 user accounts,
     it will be feasible to run these lab exercises in non-distributed mode on attendees computers equiped with one GPU card at least.
@@ -38,7 +38,7 @@
 
 3. Lab exercises to be run in distributed mode using datassets from several DeepHealth use cases and running on a HPC environment
 
-    Thursday morning from 9 AM till 1:30 PM.
+    _Thursday morning from 9 AM till 1:30 PM_
 
     Details to be added soon.
 
