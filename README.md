@@ -133,6 +133,7 @@ Then we will continue with [the sessions to carry out the lab exercises](lab).
 | <img src=people/colonnelli-100x100.jpg width=100> | | &nbsp;&nbsp; Iacopo Colonnelli (UNITO) |
 | <img src=people/photo_flich2.png width=100> | | &nbsp;&nbsp; Jos&eacute; Flich (UPV) |
 | <img src="https://bnbw.eu/assets/images/grana_v2.png" width=100> | | &nbsp;&nbsp; Costantino Grana (UNIMORE) |
+| <img src=people/empty-profile.png width=100> | | &nbsp;&nbsp; Marco Grangetto (UNITO) |
 | <img src=people/Grosso_photo.jpeg width=100> | | &nbsp;&nbsp; Marco Grosso (CDSS) |
 | <img src=people/empty-profile.png width=100> | | &nbsp;&nbsp; &Aacute;lvaro L&oacute;pez (UPV) |
 | <img src=people/empty-profile.png width=100> | | &nbsp;&nbsp; Javier Mart&iacute;nez (UPV) |
