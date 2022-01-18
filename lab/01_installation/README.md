@@ -1,7 +1,20 @@
 # PyECVL + PyEDDL installation steps
 
 ## 1. Install Anaconda
-The installation process is based on anaconda to take care of all the dependencies. To install Anaconda enter [here](https://www.anaconda.com/products/individual)
+
+### 1.1 Winter School infrastructure (UNITO)
+
+If you are going to perform the installation on the machines provided for the Winter School, install miniconda using the following commands:
+
+    wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+    chmod +x Miniconda3-latest-Linux-x86_64.sh
+    ./Miniconda3-latest-Linux-x86_64.sh
+
+### 1.2 Your personal computer
+
+If you already have conda installed (Anaconda, miniconda,...), you can skip this step. If not, you have to install a version of conda. We suggest you try miniconda or Anaconda. For both cases, you can go [here](https://docs.conda.io/en/latest/miniconda.html) for miniconda or [here](https://www.anaconda.com/products/individual) for Anaconda and use the installer for your OS. You need to download it, execute it, and then accept the default settings of the installation.
+
+**Note:** If you are going to install miniconda and you are using Linux, you can follow the steps for the Winter School infrastructure.
 
 ## 2. Create an Anaconda environment
 
