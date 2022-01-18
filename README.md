@@ -105,7 +105,7 @@ working of groups of 5 people comming from the 50 attendees registered in the la
 
 Before the lab exercises, as the starting point of the lab sessions, we have an introduction to the
 [ECVL & EDDL environment for potential developers](lab/00_ecvl_eddl_environment),
-scheduled **Monday afternoon from 3 PM to 5 PM**, and consisting in a 
+scheduled ***Monday afternoon from 3 PM to 5 PM***, and consisting in a 
 **presentation and brief explanation of the main features of both ECVL and EDDL libraries**.
 
 Then we will continue with [the sessions to carry out the lab exercises](lab).
