@@ -75,11 +75,23 @@ Lab exercises will be guided by junior and senior researchers involved in the De
         - Enzo Tartaglione (UNITO) for pruning, and 
         - Vicent Templier (CEA) for quantization methodologies
 
-7. Presentation of the other three ICT-11 projects, Friday morning
+7. Presentation of the other ICT-11 projects, Friday morning
 
-    - ICT-11 (a) by (Project Coordinator)
-    - ICT-11 (b) by (Project Coordinator)
-    - ICT-11 (c) by (Project Coordinator)
+    - 10:30 **HPC & Cloud Security in the LEXIS project**
+        by Frédéric Donnat (Outpost24) and one more from Outpost24
+
+        - A theoretical part consisting of an introduction to the Zero-Trust
+          concept with the concrete use-case of LEXIS Platform and the Zero
+          Trust Architecture applied to HPC and Cloud infrastructure.
+
+        - A pragmatical part where Outpost24 will introduce the importance of
+          a full cybersecurity assessment approach to easily improve the security
+          posture and reduce effort to identify, assess and prioritise the
+          remediation of security vulnerabilities.
+
+
+    - 11:30 **CYBELE: Making HPC more accessible for Agri-food Business**
+        by Dr. Steven Davy, Head Of Division for Programmable Autonomous Systems at Walton Institute for Information and Communication Systems Science
 
 [Here you can see and download the schedule](figures/schedule.pdf)
 
