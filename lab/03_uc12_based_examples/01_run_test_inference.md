@@ -51,13 +51,16 @@ or [from a Dropbox folder](https://www.dropbox.com/sh/vqdewy1ocqpkiu4/AABd60m7xg
 or [from a local UPV server](https://clocalprog.dsic.upv.es/winter-school/data/UC12Segm_unet_224_bce.onnx),
 _do not worry about the certificate, you can trust it, it was generated locally by the coordinator of this winter school (Jon Ander G&oacute;mez)_.
 
+    # Download from the UPV server with wget
+    wget https://clocalprog.dsic.upv.es/winter-school/data/UC12Segm_unet_224_bce.onnx --no-check-certificate
+    
 ## 3. Run inference
 Once we have the data and the model we can run inference with this command:
 
         # Inside uc12_pipeline folder
         python skin_lesion_segmentation.py \
             data/isic_segmentation/isic_segmentation.yml \
-            --ckpts ~/Downloads/UC12Segm_unet_224_bce.onnx \
+            --ckpts UC12Segm_unet_224_bce.onnx \
             --no-train-val \
             --test \
             --out-dir out_predictions \
