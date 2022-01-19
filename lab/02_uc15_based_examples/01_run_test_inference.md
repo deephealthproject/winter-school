@@ -55,12 +55,23 @@ In order to run the script we will need a pretrained model, you can take one of 
   or [from a Dropbox folder](https://www.dropbox.com/sh/vqdewy1ocqpkiu4/AADklYzBxelzFXT2TApJNyFia/uc15_256x256_normal-vs-covid_BCE-loss.onnx?dl=0)
   or [from a local UPV server](https://clocalprog.dsic.upv.es/winter-school/data/uc15_256x256_normal-vs-covid_BCE-loss.onnx),
   _do not worry about the certificate, you can trust it, it was generated locally by the coordinator of this winter school (Jon Ander G&oacute;mez)_.
+  
+      # Download from the UPV server with wget
+      wget https://clocalprog.dsic.upv.es/winter-school/data/uc15_256x256_normal-vs-covid_BCE-loss.onnx --no-check-certificate
+  
 - For the 512x512 dataset, with an accuracy on test of 88.57% (normal vs COVID 19, with CE loss): [download uc15_512x512_normal-vs-covid_CE-loss.onnx](https://upvedues-my.sharepoint.com/:u:/g/personal/salcarpo_upv_edu_es/EaLfcNGvMlFElO9Ml0-GI2UBxLxG5nOLVRBPgZe7F8S9rA?e=zMhyDj)
   or [from a Dropbox folder](https://www.dropbox.com/sh/vqdewy1ocqpkiu4/AACcx-9w5YB9X744BkzXqsKLa/uc15_512x512_normal-vs-covid_CE-loss.onnx?dl=0)
   or [from a local UPV server](https://clocalprog.dsic.upv.es/winter-school/data/uc15_512x512_normal-vs-covid_CE-loss.onnx).
+ 
+      # Download from the UPV server with wget
+      wget https://clocalprog.dsic.upv.es/winter-school/data/uc15_512x512_normal-vs-covid_CE-loss.onnx --no-check-certificate
+  
 - For the 512x512 dataset and multilabel classification (normal vs COVID 19 vs infiltrates vs pneumonia): [download uc15_512x512_normal-vs-covid-vs-infiltrates-vs-pneumonia.onnx](https://upvedues-my.sharepoint.com/:u:/g/personal/salcarpo_upv_edu_es/EWaFqI3auQlGuTIqhM-9lSEBkjq9_h0XFplSfakXBDX7fw?e=WDeAhb)
   or [from a Dropbox folder](https://www.dropbox.com/sh/vqdewy1ocqpkiu4/AACMbtb2pFLT6nXUSX01_mYNa/uc15_512x512_normal-vs-covid-vs-infiltrates-vs-pneumonia.onnx?dl=0)
   or [from a local UPV server](https://clocalprog.dsic.upv.es/winter-school/data/uc15_512x512_normal-vs-covid-vs-infiltrates-vs-pneumonia.onnx).
+  
+      # Download from the UPV server with wget
+      wget https://clocalprog.dsic.upv.es/winter-school/data/uc15_512x512_normal-vs-covid-vs-infiltrates-vs-pneumonia.onnx --no-check-certificate
 
 ## 3. Run inference
 Once we have the data and the model we can run inference with this command:
@@ -69,7 +80,7 @@ Once we have the data and the model we can run inference with this command:
         # Inside uc15_lab/UC15_pipeline/pyeddl_pipeline
         python test.py \
             --yaml-path ../../data/256x256/ecvl_256x256_normal-vs-covid_only-r0.yaml \
-            --onnx-files ~/Downloads/uc15_256x256_normal-vs-covid_BCE-loss.onnx \
+            --onnx-files uc15_256x256_normal-vs-covid_BCE-loss.onnx \
             --target-size 256 256 \
             --normal-vs-classification \
             --rgb
@@ -79,7 +90,7 @@ Once we have the data and the model we can run inference with this command:
         # Inside uc15_lab/UC15_pipeline/pyeddl_pipeline
         python test.py \
             --yaml-path ../../data/512x512/ecvl_512x512_normal-vs-covid_only-r0.yaml \
-            --onnx-files ~/Downloads/uc15_512x512_normal-vs-covid_CE-loss.onnx \
+            --onnx-files uc15_512x512_normal-vs-covid_CE-loss.onnx \
             --target-size 512 512 \
             --rgb
 
@@ -88,7 +99,7 @@ Once we have the data and the model we can run inference with this command:
         # Inside uc15_lab/UC15_pipeline/pyeddl_pipeline
         python test.py \
             --yaml-path ../../data/512x512/ecvl_512x512_normal-vs-covid-vs-infiltrates-vs-pneumonia_only-r0.yaml \
-            --onnx-files ~/Downloads/uc15_512x512_normal-vs-covid-vs-infiltrates-vs-pneumonia.onnx \
+            --onnx-files uc15_512x512_normal-vs-covid-vs-infiltrates-vs-pneumonia.onnx \
             --target-size 512 512 \
             --multiclass \
             --binary-loss \
