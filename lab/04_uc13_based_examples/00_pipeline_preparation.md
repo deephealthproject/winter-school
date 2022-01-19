@@ -1,4 +1,15 @@
 # Use Case 13 pipeline preparation for Winter School
+With this guide, you will learn how to download and prepare the code and data to execute the UC13 pipeline.
+
+**If you are using the Winter School infrastructure (UNITO), skip steps 1, 2 and 3**. Because you already have the code and data in your */mnt* directory. This directory is read-only, so to modify the code, we will copy the pipeline code to the home directory with the following commands:
+    
+    # Copy the code avoiding the data folder
+    rsync -a --progress --exclude 'clean_signals/' /mnt/pipelines/uc13_lab/ ~/uc13_lab
+    # Create a symlink to the data in the new folder
+    ln -s /mnt/pipelines/uc13_lab/clean_signals ~/uc13_lab/clean_signals
+
+If you are going to prepare the pipeline on your machine, follow just the following steps.
+
 
 ## 1. Create a directory for the pipeline
 ```
