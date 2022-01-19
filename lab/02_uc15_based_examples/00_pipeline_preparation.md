@@ -1,5 +1,16 @@
 # PyECVL + PyEDDL pipeline preparation steps
 
+With this guide, you will learn how to download and prepare the code and data to execute the UC15 pipeline.
+
+**If you are using the Winter School infrastructure (UNITO), skip steps 1, 2 and 3**. Because you already have the code and data in your */mnt* directory. This directory is read-only, so to modify the code, we will copy the pipeline code to the home directory with the following commands:
+    
+    # Copy the code avoiding the data folder
+    rsync -a --progress --exclude 'data/' /mnt/pipelines/uc15_lab/ ~/uc15_lab
+    # Create a symlink to the data in the new folder
+    ln -s /mnt/pipelines/uc15_lab/data ~/uc15_lab/data
+
+If you are going to prepare the pipeline on your machine, follow just the following steps.
+
 ## 1. Create a pipeline directory
 We will use this directory to store the dataset and the pipeline code.
 
@@ -32,12 +43,14 @@ Inside the extracted folder of each dataset you will find the following:
 
 **Note:** The file structure and dataset partitioning is the same in both datasets, the only difference is the size of the images (256x256 and 512x512).
     
-## 3. Prepare the pipeline
+## 3. Prepare the pipeline code
 Download the GitHub repository of the UC15 pipeline:
 
     # Inside the uc15_lab directory
     git clone https://github.com/deephealthproject/UC15_pipeline.git
-    
+
+## 4. Install additional dependencies
+
 ### REMEMBER to activate the conda environment before the next step
 If you haven't done the installation of the libraries (PyEDDL and PyECVL) you can
 see how to install them [here](https://github.com/deephealthproject/winter-school/blob/main/lab/01_installation/README.md).
@@ -46,7 +59,7 @@ see how to install them [here](https://github.com/deephealthproject/winter-schoo
 
 Install the additional dependencies of the pipeline:
 
-    cd UC15_pipeline
+    # Inside uc15_lab/UC15_pipeline directory
     pip install -r requirements.txt
     
 At the end you should have this directory structure:
