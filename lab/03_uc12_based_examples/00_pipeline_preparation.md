@@ -1,5 +1,16 @@
 # PyECVL + PyEDDL pipeline preparation steps
 
+With this guide, you will learn how to download and prepare the code and data to execute the UC12 pipeline.
+
+**If you are using the Winter School infrastructure (UNITO), skip steps 1 and 2**. Because you already have the code and data in your */mnt* directory. This directory is read-only, so to modify the code, we will copy the pipeline code to the home directory with the following commands:
+
+    # Copy the code avoiding the data folder
+    rsync -a --progress --exclude 'data/' /mnt/pipelines/uc12_pipeline/ ~/uc12_pipeline
+    # Create a symlink to the data in the new folder
+    ln -s /mnt/pipelines/uc12_pipeline/data ~/uc12_pipeline/data
+    
+If you are going to prepare the pipeline on your machine, follow just the following steps.
+
 ## 1. Prepare the pipeline
 The Python code prepared for this lab session is in the winter school repo, to download it:
 
