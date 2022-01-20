@@ -79,20 +79,21 @@ Lab exercises will be guided by junior and senior researchers involved in the De
 7. Presentation of other ICT-11 projects:
 
     - **HPC & Cloud Security in the LEXIS project** _Friday 10:30-11:30 AM_
-        by Frédéric Donnat (Outpost24) and one more from Outpost24
+        by Frédéric Donnat and Barry Butler from Outpost24
 
         - A theoretical part consisting of an introduction to the Zero-Trust
           concept with the concrete use-case of LEXIS Platform and the Zero
-          Trust Architecture applied to HPC and Cloud infrastructure.
+          Trust Architecture applied to HPC and Cloud infrastructure, by Frédéric Donnat.
 
         - A pragmatical part where Outpost24 will introduce the importance of
           a full cybersecurity assessment approach to easily improve the security
           posture and reduce effort to identify, assess and prioritise the
-          remediation of security vulnerabilities.
+          remediation of security vulnerabilities, by Barry Butler.
 
 
     - **CYBELE: Making HPC more accessible for Agri-food Business** _Friday 11:30 AM - 12:30 PM_
-        by Dr. Steven Davy, Head Of Division for Programmable Autonomous Systems at Walton Institute for Information and Communication Systems Science
+        by Dr. Steven Davy, Head Of Division for Programmable Autonomous Systems
+        at Walton Institute for Information and Communication Systems Science
 
 [Here you can see and download the schedule](figures/schedule.pdf)
 
