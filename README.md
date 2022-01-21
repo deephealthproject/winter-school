@@ -62,7 +62,9 @@ Lab exercises will be guided by junior and senior researchers involved in the De
     1. DICOM & NifTI formats by Costantino Grana (UNIMORE): _Tuesday 3-3:30 PM_
 
     2. Deep Learning pipeline on histopathology images:
-       detection of prostatic tumor, by Francesco Versaci (CRS4) and Giovanni Busonera (CRS4): _Tuesday 3:30-4:30 PM_
+       detection of prostatic tumor, [data engineering](slides/dl_pipeline_crs4_versaci.pdf)
+	   by Francesco Versaci (CRS4) and [learning pipeline](slides/dl_pipeline_crs4_busonera.pdf)
+	   by Giovanni Busonera (CRS4): _Tuesday 3:30-4:30 PM_
 
 5. High-Performance Computing, by Eduardo Qui&ntilde;ones (BSC) and Iacopo Colonnelli (UNITO): _Wednesday 12-1:30 PM_
 
