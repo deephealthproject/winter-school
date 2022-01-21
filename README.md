@@ -73,7 +73,7 @@ Lab exercises will be guided by junior and senior researchers involved in the De
     2. Reconfigurable Architectures Support in EDDL _Thursday 4-6 PM_, by
 
         - Jos&eacute; Flich (UPV) for FPGA,
-        - Enzo Tartaglione (UNITO) for pruning, and 
+        - Enzo Tartaglione (UNITO) for [pruning](slides/pruning.pdf), and 
         - Vicent Templier (CEA) for quantization methodologies
 
 7. Presentation of other ICT-11 projects:
