@@ -36,17 +36,25 @@ Lab exercises will be guided by junior and senior researchers involved in the De
 
 [Here you can see and download the schedule](figures/schedule.pdf)
 
+### DeepHealth project and Winter School presentation
+
+Monica Caballero, DeepHealth project coordinator, will do a
+[short presentation of the DeepHealth project](slides/DeepHealth_Overview_WinterSchool.pdf)
+_Monday at 9-9-30 AM_, then Jon Ander Gómez, DeepHealth technical manager,
+will do an overview of the Winter School using the contents of this GitHub repository.
+
+
 ### Master classes
 
 1. Doing Deep Learning with the **European Distributed Deep Learing Library** (EDDL), by Roberto Paredes (UPV)
 
-    - Two sessions: _Monday 10-11:30 AM_ and _Tuesday 9-10 AM_
+    - Two sessions: _Monday 10-11:30 AM_ and _Tuesday 9-10 AM_ [slides for both sessions](slides/DL_EDDL.pdf)
 
 2. Doing Computer Vision with the **European Computer Vision Library** (ECVL), by Constantino Grana (UNIMORE)
     
-    - Two sessions: _Monday 12-1:30 PM_ and _Tuesday 10-11 AM_
+    - Two sessions: _Monday 12-1:30 PM_ and _Tuesday 10-11 AM_ [slides for both sessions](slides/doing_cv_with_ecvl.pdf)
 
-3. Medical Imaging: _Tuesday 11:30 AM to 1:30 PM_
+3. Medical Imaging: _Tuesday 11:30 AM to 1:30 PM_ [slides for this session](slides/MedImagingSession_Complete.pdf)
 
     1. Introduction to medical imaging: a constant learning experience by Marco Grangetto (UNITO)
 
@@ -76,7 +84,7 @@ Lab exercises will be guided by junior and senior researchers involved in the De
 
         - Jos&eacute; Flich (UPV) for FPGA,
         - Enzo Tartaglione (UNITO) for [pruning](slides/pruning.pdf), and 
-        - Vicent Templier (CEA) for quantization methodologies
+        - Vicent Templier (CEA) for [quantization methodologies](slides/Quantization_methodologies_DeepHealth_Templier.pdf)
 
 7. Presentation of other ICT-11 projects:
 
