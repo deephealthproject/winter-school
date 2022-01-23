@@ -82,7 +82,7 @@ will do an overview of the Winter School using the contents of this GitHub repos
 
     2. Reconfigurable Architectures Support in EDDL _Thursday 4-6 PM_, by
 
-        - Jos&eacute; Flich (UPV) for FPGA,
+        - Jos&eacute; Flich (UPV) for [FPGA](slides/winter_school_fpgas.pdf),
         - Enzo Tartaglione (UNITO) for [pruning](slides/pruning.pdf), and 
         - Vicent Templier (CEA) for [quantization methodologies](slides/Quantization_methodologies_DeepHealth_Templier.pdf)
 
