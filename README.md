@@ -67,7 +67,7 @@ will do an overview of the Winter School using the contents of this GitHub repos
 
 4. Medical Image manipulation
 
-    1. DICOM & NifTI formats by Costantino Grana (UNIMORE): _Tuesday 3-3:30 PM_
+    1. DICOM & NifTI formats by Costantino Grana (UNIMORE): _Tuesday 3-3:30 PM_ [slides for this session](slides/dicom_and_nifti_formats.pdf)
 
     2. Deep Learning pipeline on histopathology images:
        detection of prostatic tumor. [Data engineering](slides/dl_pipeline_crs4_versaci.pdf)
