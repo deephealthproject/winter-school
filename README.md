@@ -52,7 +52,7 @@ will do an overview of the Winter School using the contents of this GitHub repos
 
 2. Doing Computer Vision with the **European Computer Vision Library** (ECVL), by Costantino Grana (UNIMORE) 
     
-    - Two sessions: _Monday 12-1:30 PM_ and _Tuesday 10-11 AM_ [slides for monday session](slides/doing_cv_with_ecvl.pdf)
+    - Two sessions: _Monday 12-1:30 PM_ and _Tuesday 10-11 AM_ [slides for monday session](slides/doing_cv_with_ecvl.pdf) [slides for tuesday session](slides/ecvl_tensors&data_augmentation.pdf)
 
 3. Medical Imaging: _Tuesday 11:30 AM to 1:30 PM_ [slides for this session](slides/MedImagingSession_Complete.pdf)
 
