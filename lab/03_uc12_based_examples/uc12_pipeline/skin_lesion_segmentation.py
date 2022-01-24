@@ -35,10 +35,83 @@ from lib import utils
 from lib.models import Unet, SegNet, SegNetBN
 
 
+def inference(phase, dataset, epoch, args, num_batches, net, best_miou=0):
+    current_path = os.path.join(args.out_dir, phase, f'Epoch_{epoch + 1}')
+    evaluator = utils.Evaluator()
+    out = eddl.getOut(net)[0]
+    dataset.Start()
+    out_string = f'- epoch [{epoch + 1}/{args.epochs}] ' if phase == "Validation" else ''
+
+    for b in range(num_batches):
+        print(f'{phase} {out_string}- batch [{b + 1}/{num_batches}]')
+        samples, x, y = dataset.GetBatch()
+        eddl.forward(net, [x])
+        output = eddl.getOutput(out)
+        current_bs = x.shape[0]
+        for bs in range(current_bs):
+            img = output.select([str(bs)])
+            gt = y.select([str(bs)])
+            img_np = np.array(img, copy=False)
+            gt_np = np.array(gt, copy=False)
+            iou = evaluator.BinaryIoU(img_np, gt_np, thresh=0.5)
+            print(f' - IoU: {iou:.3f}', end='', flush=True)
+            if args.out_dir:
+                os.makedirs(current_path, exist_ok=True)
+                # Original image
+                orig_img = x.select([str(bs)])
+                orig_img.mult_(255.)
+                orig_img.normalize_(0., 255.)
+                orig_img_t = ecvl.TensorToView(orig_img)
+                orig_img_t.colortype_ = ecvl.ColorType.RGB
+                orig_img_t.channels_ = 'xyc'
+                # Draw the Predicted mask
+                img_t = ecvl.TensorToView(img)
+                img_t.colortype_ = ecvl.ColorType.GRAY
+                img_t.channels_ = 'xyc'
+                tmp, labels = ecvl.Image.empty(), ecvl.Image.empty()
+                ecvl.ConvertTo(img_t, tmp, ecvl.DataType.uint8)
+                ecvl.ConnectedComponentsLabeling(tmp, labels)
+                ecvl.ConvertTo(labels, tmp, ecvl.DataType.uint8)
+                contours = ecvl.FindContours(tmp)
+                ecvl.ConvertTo(orig_img_t, tmp, ecvl.DataType.uint8)
+                tmp_np = np.array(tmp, copy=False)
+                for cseq in contours:
+                    for c in cseq:
+                        tmp_np[c[0], c[1], 0] = 255
+                        tmp_np[c[0], c[1], 1] = 0
+                        tmp_np[c[0], c[1], 2] = 0
+                filename = samples[bs].location_[0]
+                head, tail = os.path.splitext(os.path.basename(filename))
+                bname = '%s.png' % head
+                output_fn = os.path.join(current_path, bname)
+                ecvl.ImWrite(output_fn, tmp)
+                # Ground truth mask
+                gt_t = ecvl.TensorToView(gt)
+                gt_t.colortype_ = ecvl.ColorType.GRAY
+                gt_t.channels_ = 'xyc'
+                gt.mult_(255.)
+                gt_filename = samples[bs].label_path_
+                gt_fn = os.path.join(current_path,
+                                     os.path.basename(gt_filename))
+                ecvl.ImWrite(gt_fn, gt_t)
+        print()
+
+    dataset.Stop()  # Stop validation split generator
+
+    last_miou = evaluator.MIoU()
+    print(f'{phase} {out_string}- Total MIoU: {last_miou:.3f}')
+
+    if phase == "Validation" and last_miou > best_miou:
+        best_miou = last_miou
+        filepath = os.path.join(args.weights, f'isic_segm_{args.model}_epoch_{epoch + 1}.onnx')
+        eddl.save_net_to_onnx_file(net, filepath)
+        print('Weights saved')
+
+    return best_miou
+
+
 def main(args):
-    batch_size = args.batch_size
     image_size = args.size, args.size
-    thresh = 0.5
 
     if args.weights:
         os.makedirs(args.weights, exist_ok=True)
@@ -66,15 +139,14 @@ def main(args):
                           0.1337, 0.1480, 0.1595]),  # isic stats
 
     ])
-    dataset_augs = ecvl.DatasetAugmentations(
-        [training_augs, validation_test_augs, validation_test_augs])
+    dataset_augs = ecvl.DatasetAugmentations([training_augs, validation_test_augs, validation_test_augs])
 
     print('Reading dataset')
     d = ecvl.DLDataset(args.in_ds, args.batch_size,
                        dataset_augs, ctype=ecvl.ColorType.RGB,
                        num_workers=args.datagen_workers,
                        queue_ratio_size=args.queue_ratio_size)
-    num_classes = len(d.classes_) or d.n_channels_gt_
+    num_classes = d.n_channels_gt_
     size = d.n_channels_, args.size, args.size
 
     if args.ckpts:
@@ -102,13 +174,12 @@ def main(args):
         eddl.CS_GPU(args.gpu, mem='low_mem') if args.gpu else eddl.CS_CPU(),
         False if args.ckpts else True  # Initialize weights only with new model
     )
-    out = eddl.getOut(net)[0]
 
     eddl.summary(net)
     os.makedirs('logs', exist_ok=True)
     eddl.setlogfile(net, 'logs/skin_lesion_segmentation')
 
-    miou = 0.
+    best_miou = 0.
     if args.train:
         num_batches_train = d.GetNumBatches("training")
         num_batches_val = d.GetNumBatches("validation")
@@ -132,140 +203,20 @@ def main(args):
 
             d.SetSplit(ecvl.SplitType.validation)
             d.ResetBatch(ecvl.SplitType.validation, shuffle=False)
-            eddl.reset_loss(net)
             evaluator.ResetEval()
             eddl.set_mode(net, 0)
-            d.Start()
 
-            for b in range(num_batches_val):
-                print(
-                    f'Validation - epoch [{e + 1}/{args.epochs}] - batch [{b + 1}/{num_batches_val}]')
-                samples, x, y = d.GetBatch()
-                eddl.forward(net, [x])
-                output = eddl.getOutput(out)
-                current_bs = x.shape[0]
-                for bs in range(current_bs):
-                    img = output.select([str(bs)])
-                    gt = y.select([str(bs)])
-                    img_np = np.array(img, copy=False)
-                    gt_np = np.array(gt, copy=False)
-                    iou = evaluator.BinaryIoU(img_np, gt_np, thresh=thresh)
-                    print(f' - IoU: {iou:.3f}', end='', flush=True)
-                    if args.out_dir:
-                        os.makedirs(args.out_dir, exist_ok=True)
-                        # Original image
-                        orig_img = x.select([str(bs)])
-                        orig_img.mult_(255.)
-                        orig_img.normalize_(0., 255.)
-                        orig_img_t = ecvl.TensorToView(orig_img)
-                        orig_img_t.colortype_ = ecvl.ColorType.RGB
-                        orig_img_t.channels_ = 'xyc'
-                        # Draw the Predicted mask
-                        img_t = ecvl.TensorToView(img)
-                        img_t.colortype_ = ecvl.ColorType.GRAY
-                        img_t.channels_ = 'xyc'
-                        tmp, labels = ecvl.Image.empty(), ecvl.Image.empty()
-                        ecvl.ConvertTo(img_t, tmp, ecvl.DataType.uint8)
-                        ecvl.ConnectedComponentsLabeling(tmp, labels)
-                        ecvl.ConvertTo(labels, tmp, ecvl.DataType.uint8)
-                        contours = ecvl.FindContours(tmp)
-                        ecvl.ConvertTo(orig_img_t, tmp, ecvl.DataType.uint8)
-                        tmp_np = np.array(tmp, copy=False)
-                        for cseq in contours:
-                            for c in cseq:
-                                tmp_np[c[0], c[1], 0] = 255
-                                tmp_np[c[0], c[1], 1] = 0
-                                tmp_np[c[0], c[1], 2] = 0
-                        filename = samples[bs].location_[0]
-                        head, tail = os.path.splitext(os.path.basename(filename))
-                        bname = '%s.png' % head
-                        output_fn = os.path.join(args.out_dir, bname)
-                        ecvl.ImWrite(output_fn, tmp)
-                        # Ground truth mask
-                        gt_t = ecvl.TensorToView(gt)
-                        gt_t.colortype_ = ecvl.ColorType.GRAY
-                        gt_t.channels_ = 'xyc'
-                        gt.mult_(255.)
-                        gt_filename = samples[bs].label_path_
-                        gt_fn = os.path.join(args.out_dir,
-                                             os.path.basename(gt_filename))
-                        ecvl.ImWrite(gt_fn, gt_t)
-                print()
+            best_miou = inference("Validation", dataset=d, epoch=e, args=args, num_batches=num_batches_val, net=net,
+                             best_miou=best_miou)
 
-            d.Stop()  # Stop validation split generator
-
-            last_miou = evaluator.MIoU()
-            print(
-                f'Validation - epoch [{e + 1}/{args.epochs}] - Total MIoU: {last_miou:.3f}')
-
-            if last_miou > miou:
-                miou = last_miou
-                filepath = os.path.join(args.weights,
-                                     f'isic_segm_{args.model}_epoch_{e + 1}.onnx')
-                eddl.save_net_to_onnx_file(net, filepath)
-                print('Weights saved')
     if args.test:
         evaluator = utils.Evaluator()
         evaluator.ResetEval()
 
         d.SetSplit(ecvl.SplitType.test)
         num_batches_test = d.GetNumBatches("test")
-        d.Start()
-        for b in range(num_batches_test):
-            print(f'Test - batch [{b + 1}/{num_batches_test}]')
-            samples, x, y = d.GetBatch()
-            eddl.forward(net, [x])
-            output = eddl.getOutput(out)
-            current_bs = x.shape[0]
-            for bs in range(current_bs):
-                img = output.select([str(bs)])
-                gt = y.select([str(bs)])
-                img_np = np.array(img, copy=False)
-                gt_np = np.array(gt, copy=False)
-                iou = evaluator.BinaryIoU(img_np, gt_np, thresh=thresh)
-                print(f' - IoU: {iou:.3f}', end='', flush=True)
-                if args.out_dir:
-                    os.makedirs(args.out_dir, exist_ok=True)
-                    # Original image
-                    orig_img = x.select([str(bs)])
-                    orig_img.mult_(255.)
-                    orig_img.normalize_(0., 255.)
-                    orig_img_t = ecvl.TensorToView(orig_img)
-                    orig_img_t.colortype_ = ecvl.ColorType.RGB
-                    orig_img_t.channels_ = 'xyc'
-                    # Draw the Predicted mask
-                    img_t = ecvl.TensorToView(img)
-                    img_t.colortype_ = ecvl.ColorType.GRAY
-                    img_t.channels_ = 'xyc'
-                    tmp, labels = ecvl.Image.empty(), ecvl.Image.empty()
-                    ecvl.ConvertTo(img_t, tmp, ecvl.DataType.uint8)
-                    ecvl.ConnectedComponentsLabeling(tmp, labels)
-                    ecvl.ConvertTo(labels, tmp, ecvl.DataType.uint8)
-                    contours = ecvl.FindContours(tmp)
-                    ecvl.ConvertTo(orig_img_t, tmp, ecvl.DataType.uint8)
-                    tmp_np = np.array(tmp, copy=False)
-                    for cseq in contours:
-                        for c in cseq:
-                            tmp_np[c[0], c[1], 0] = 255
-                            tmp_np[c[0], c[1], 1] = 0
-                            tmp_np[c[0], c[1], 2] = 0
-                    filename = samples[bs].location_[0]
-                    head, tail = os.path.splitext(os.path.basename(filename))
-                    bname = '%s.png' % head
-                    output_fn = os.path.join(args.out_dir, bname)
-                    ecvl.ImWrite(output_fn, tmp)
-                    # Ground truth mask
-                    gt_t = ecvl.TensorToView(gt)
-                    gt_t.colortype_ = ecvl.ColorType.GRAY
-                    gt_t.channels_ = 'xyc'
-                    gt.mult_(255.)
-                    gt_filename = samples[bs].label_path_
-                    gt_fn = os.path.join(args.out_dir,
-                                         os.path.basename(gt_filename))
-                    ecvl.ImWrite(gt_fn, gt_t)
-        d.Stop()
-        miou = evaluator.MIoU()
-        print(f'Test - Total MIoU: {miou:.3f}')
+        eddl.set_mode(net, 0)
+        inference("Test", dataset=d, epoch=args.epochs, args=args, num_batches=num_batches_test, net=net)
 
 
 if __name__ == '__main__':
@@ -282,7 +233,7 @@ if __name__ == '__main__':
                         help='Size of input slices')
     parser.add_argument('--gpu', nargs='+', type=int, required=False,
                         help='`--gpu 1 1` to use two GPUs')
-    parser.add_argument('--out-dir', metavar='DIR',
+    parser.add_argument('--out-dir', metavar='DIR', default="",
                         help='if set, save images in this directory')
     parser.add_argument('--weights', metavar='DIR', type=str, default='weights',
                         help='save weights in this directory')
