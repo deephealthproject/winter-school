@@ -75,9 +75,9 @@ The test script for the recurrent approach is `test_recurrent_detector.py` and h
 
 `--gpus`: Number of gpus to use. Usage: "--gpus 1 1" (for 2 gpus). Default: 1 (one gpu)
 
-`--lr`: Initial learning rate. Default: 0.0001
+`--lr`: Initial learning rate. Default: 0.0001 (Does not matter when testing)
 
-`--opt`: Optimizer: "adam" or "sgd". Default: adam
+`--opt`: Optimizer: "adam" or "sgd". Default: adam  (Does not matter when testing)
 
 ### Data Loader Arguments
 
