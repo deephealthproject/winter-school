@@ -168,4 +168,4 @@ Then we will continue with [the sessions to carry out the lab exercises](lab).
 | <img src=people/empty-profile.png width=100> | | &nbsp;&nbsp; Eduardo Qui&ntilde;ones (BSC) |
 | <img src=people/empty-profile.png width=100> | | &nbsp;&nbsp; Riccardo Renzulli (UNITO) |
 | <img src=people/foto_tarta.png width=100> | | &nbsp;&nbsp; Enzo Tartaglione (UNITO) |
-| <img src=people/empty-profile.png width=100> | | &nbsp;&nbsp; Francesco Versaci (CRS4) |
+| <img src="https://static-portale.crs4.it/images/people/425.jpg" width=100> | | &nbsp;&nbsp; Francesco Versaci (CRS4) |
