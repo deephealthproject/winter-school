@@ -150,7 +150,7 @@ Then we will continue with [the sessions to carry out the lab exercises](lab).
 |     |     |     |
 | --- | --- | --- |
 | <img src=people/empty-profile.png width=100> | | &nbsp;&nbsp; Marco Aldinucci (UNITO) |
-| <img src=people/empty-profile.png width=100> | | &nbsp;&nbsp; Federico Bolelli (UNIMORE) |
+| <img src="http://personale.unimore.it/foto.aspx?id=17662" width=100> | | &nbsp;&nbsp; Federico Bolelli (UNIMORE) |
 | <img src=people/empty-profile.png width=100> | | &nbsp;&nbsp; Giovanni Busonera (CRS4) |
 | <img src=people/empty-profile.png width=100> | | &nbsp;&nbsp; Barbara Cantalupo (UNITO) |
 | <img src=people/empty-profile.png width=100> | | &nbsp;&nbsp; Salvador Carri&oacute;n (UPV) |
