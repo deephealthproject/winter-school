@@ -36,11 +36,12 @@
     **IMPORTANT NOTICE**: due to the time required to download datasets, we suggest attenddes to start to download all the datasets
     referenced in the three lab exercises the week before the winter school starts.
 
-3. Lab exercises to be run in distributed mode using datassets from several DeepHealth use cases and running on a HPC environment
+3. Lab exercises to be run in distributed mode using datasets from several DeepHealth use cases and running on a HPC environment
 
     _Thursday morning from 9 AM till 1:30 PM_
 
-    Details to be added soon.
+    Details on the [slides](../slides/DeepHealth_HPCLab_WinterSchool.pptx)
+
 
 
 ### Lab team coordinators (in alphabetical order):
