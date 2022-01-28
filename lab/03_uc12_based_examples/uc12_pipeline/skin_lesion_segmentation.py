@@ -68,6 +68,7 @@ def inference(phase, dataset, epoch, args, num_batches, net, best_miou=0):
                 img_t = ecvl.TensorToView(img)
                 img_t.colortype_ = ecvl.ColorType.GRAY
                 img_t.channels_ = 'xyc'
+                ecvl.Threshold(img_t, img_t, 0.5, 255)
                 tmp, labels = ecvl.Image.empty(), ecvl.Image.empty()
                 ecvl.ConvertTo(img_t, tmp, ecvl.DataType.uint8)
                 ecvl.ConnectedComponentsLabeling(tmp, labels)
