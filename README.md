@@ -94,11 +94,13 @@ will do an overview of the Winter School using the contents of this GitHub repos
         - A theoretical part consisting of an introduction to the Zero-Trust
           concept with the concrete use-case of LEXIS Platform and the Zero
           Trust Architecture applied to HPC and Cloud infrastructure, by Frédéric Donnat.
+          [slides](slides/LEXIS-Deephealth-WinterSchool-2022.pdf)
 
         - A pragmatical part where Outpost24 will introduce the importance of
           a full cybersecurity assessment approach to easily improve the security
           posture and reduce effort to identify, assess and prioritise the
           remediation of security vulnerabilities, by Barry Butler.
+          [slides](LEXIS-Deephealth-WinterSchool-2022-OP24BB.pdf)
 
 
     - **CYBELE: Making HPC more accessible for Agri-food Business** _Friday 11:30 AM - 12:30 PM_
