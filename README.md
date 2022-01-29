@@ -100,7 +100,7 @@ will do an overview of the Winter School using the contents of this GitHub repos
           a full cybersecurity assessment approach to easily improve the security
           posture and reduce effort to identify, assess and prioritise the
           remediation of security vulnerabilities, by Barry Butler.
-          [slides](LEXIS-Deephealth-WinterSchool-2022-OP24BB.pdf)
+          [slides](slides/LEXIS-Deephealth-WinterSchool-2022-OP24BB.pdf)
 
 
     - **CYBELE: Making HPC more accessible for Agri-food Business** _Friday 11:30 AM - 12:30 PM_
