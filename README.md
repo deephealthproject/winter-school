@@ -54,7 +54,7 @@ will do an overview of the Winter School using the contents of this GitHub repos
     
     - Two sessions: _Monday 12-1:30 PM_ and _Tuesday 10-11 AM_ [slides for monday session](slides/doing_cv_with_ecvl.pdf) [slides for tuesday session](slides/ecvl_tensors&data_augmentation.pdf)
 
-3. Medical Imaging: _Tuesday 11:30 AM to 1:30 PM_ [slides for this session](slides/MedImagingSession_Complete.pdf)
+3. Medical Imaging: _Tuesday 11:30 AM to 1:30 PM_ [slides for the four presentations of this session](slides/MedImagingSession_Complete.pdf)
 
     1. Introduction to medical imaging: a constant learning experience by Marco Grangetto (UNITO)
 
@@ -67,14 +67,20 @@ will do an overview of the Winter School using the contents of this GitHub repos
 
 4. Medical Image manipulation
 
-    1. DICOM & NifTI formats by Costantino Grana (UNIMORE): _Tuesday 3-3:30 PM_ [slides for this session](slides/dicom_and_nifti_formats.pdf)
+    1. DICOM & NifTI formats by Costantino Grana (UNIMORE): _Tuesday 3-3:30 PM_ [slides](slides/dicom_and_nifti_formats.pdf)
 
     2. Deep Learning pipeline on histopathology images:
        detection of prostatic tumor. [Data engineering](slides/dl_pipeline_crs4_versaci.pdf)
 	   by Francesco Versaci (CRS4) and [learning pipeline](slides/dl_pipeline_crs4_busonera.pdf)
 	   by Giovanni Busonera (CRS4): _Tuesday 3:30-4:30 PM_
 
-5. High-Performance Computing, by Eduardo Qui&ntilde;ones (BSC) and Iacopo Colonnelli (UNITO): _Wednesday 12-1:30 PM_
+5. High-Performance Computing _Wednesday 12-1:30 PM_
+
+    1. HPC and Deep Learning Training operations by Eduardo Qui&ntilde;ones (BSC) [slides](slides/DeepHealth_HPC_WinterSchool.pptx)
+
+    2. The Modernisation of HPC Applications for the cloud era by Marco Aldinucci (UNITO) [slides](slides/ModernizationOfHPCApplications.pdf)
+
+    3. The OpenDeepHealth toolkit by Iacopo Colonnelli (UNITO) [slides](slides/OpenDeepHealth_toolkit.pdf)
 
 6. Heterogeneus Architectures in EDDL
 
